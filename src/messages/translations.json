@@ -1,0 +1,15 @@
+{
+    "Hero.fullName": {
+        "ru": "Дмитрий Лукьянов",
+        "en": "Dmitry Lukyanov"
+    },
+    "Hero.role": {
+        "ru": "Frontend Разработчик",
+        "en": "Frontend Developer"
+    },
+    "Experience.title": {
+        "ru": "Опыт",
+        "en": "Experience"
+    }
+        
+}
