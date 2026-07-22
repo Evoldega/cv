@@ -7,8 +7,8 @@ export default async function Hero() {
   const t = await getTranslations();
   
   return (
-    <section className="flex flex-row items-start justify-around">
-      <div className="flex flex-row items-start justify-around">
+    <section className="flex flex-row items-start justify-start">
+      <div className="flex flex-row items-start justify-start">
         <Image
             src="/avatar.png"
             width={156}
@@ -18,7 +18,7 @@ export default async function Hero() {
         />
         <div className="flex flex-col items-start justify-start ml-4">
           <Text variant="h1">{t("Hero.fullName")}</Text>
-          <Text className="text-violet-500" variant="h3">{t("Hero.role")}</Text>
+          <Text className="text-violet-500" variant="h2">{t("Common.frontend")}</Text>
         </div>
       </div>
       <div className="flex flex-col items-start justify-start ml-8">
