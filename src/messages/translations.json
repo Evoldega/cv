@@ -3,13 +3,140 @@
         "ru": "Дмитрий Лукьянов",
         "en": "Dmitry Lukyanov"
     },
-    "Hero.role": {
-        "ru": "Frontend Разработчик",
-        "en": "Frontend Developer"
-    },
     "Experience.title": {
         "ru": "Опыт",
         "en": "Experience"
+    },
+    "Experience.rosatom": {
+        "ru": "Росатом",
+        "en": "Rosatom"
+    },
+    "Experience.rosatom_date": {
+        "ru": "Май 2022 - Июль 2025",
+        "en": "May 2022 - Jul 2025"
+    },
+    "Experience.ros_exp1": {
+        "ru": "Разрабатывал и поддерживал UI-библиотеку (компонентный поставщик для low-code платформы), внедрил PWA-функциональность: установка приложения из браузера, биометрическая аутентификация, доступ к камере; отлаживал на реальных устройствах и в Android Studio Emulator.",
+        "en": "Developed and maintained a UI component library (component provider for a low-code platform), implementing PWA capabilities including browser installation, biometric authentication, and camera access. Performed testing and debugging on physical devices and Android Studio Emulator."
+    },
+    "Experience.ros_exp1_bold": {
+        "ru": "Разрабатывал и поддерживал UI-библиотеку",
+        "en": "Developed and maintained a UI component library"
+    },
+    "Experience.ros_exp2": {
+        "ru": "Участвовал в разработке высоконагруженного веб-приложения для работы с большими объемами данных: реализация редактируемой таблицы, диаграммы Ганта, календаря; применил виртуализацию списков + серверную пагинацию для оптимизации производительности.",
+        "en": "Contributed to the development of a high-load web application for processing large volumes of data, implementing editable data grids, Gantt charts, and calendar views. Improved performance by leveraging list virtualization and server-side pagination."
+    },
+    "Experience.ros_exp2_bold": {
+        "ru": "Участвовал в разработке высоконагруженного веб-приложения",
+        "en": "Contributed to the development of a high-load web application"
+    }, 
+    "Experience.ros_exp3": {
+        "ru": "Обеспечил многопользовательский режим без конфликтов редактирования: использовал WebSocket + оптимистичное обновление + блокировка на уровне отдельных ячеек.",
+        "en": "Enabled conflict-free real-time collaboration by implementing WebSocket-based synchronization, optimistic updates, and cell-level locking mechanisms."
+    },
+    "Experience.ros_exp3_bold": {
+        "ru": "Обеспечил многопользовательский режим без конфликтов редактирования",
+        "en": "Enabled conflict-free real-time collaboration"
+    }, 
+    "Experience.ros_exp4": {
+        "ru": "В составе рабочей группы участвовал во внедрении SAFe: помогал настраивать Agile Release Trains, проводил адаптацию процессов, способствовал снижению времени от идеи до релиза / устранению блокеров.",
+        "en": "Participated in the adoption of the SAFe framework as part of a cross-functional working group, helping configure Agile Release Trains (ARTs), adapt development processes, reduce time-to-market, and eliminate delivery bottlenecks."
+    },
+    "Experience.ros_exp4_bold": {
+        "ru": "В составе рабочей группы участвовал во внедрении SAFe",
+        "en": "Participated in the adoption of the SAFe framework"
+    },
+    "Experience.ros_exp5": {
+        "ru": "Участник отраслевого чемпионата профессионального мастерства AtomSkills-2024 по компетенции \"Программные решения для бизнеса\" (WorldSkills-стандарт): в составе команды успешно реализовал интеграцию собственного продукта с решением команды ИИ, обеспечив совместную работу систем и демонстрацию ценности для бизнеса.",
+        "en": "Competed in the AtomSkills 2024 industry championship in the Business Software Solutions competency (WorldSkills standard). As part of a team, successfully integrated our product with another team's AI solution, enabling seamless interoperability and demonstrating business value."
+    },
+    "Experience.ros_exp5_bold": {
+        "ru": "Участник отраслевого чемпионата профессионального мастерства AtomSkills-2024",
+        "en": "Competed in the AtomSkills 2024"
+    },
+    "Experience.ros_exp6": {
+        "ru": "Участвовал в продуктовой разработке с нуля до релиза:",
+        "en": "Contributed to end-to-end product development, from concept to MVP and production release, including:"
+    },
+    "Experience.ros_exp6_bold": {
+        "ru": "Участвовал",
+        "en": "Contributed to end-to-end product development"
+    },
+    "Experience.ros_exp7": {
+        "ru": "    Система \"цифровой двойник изделия\" (АЭМ)",
+        "en": "    Digital Twin System (AEM)"
+    },
+    "Experience.ros_exp7_bold": {
+        "ru": "Система \"цифровой двойник изделия\" (АЭМ)",
+        "en": "Digital Twin System (AEM)"
+    },
+    "Experience.ros_exp8": {
+        "ru": "    Цифровая информационная модель (BIM)",
+        "en": "    Building Information Modeling (BIM) platform"
+    },
+    "Experience.ros_exp8_bold": {
+        "ru": "Цифровая информационная модель (BIM)",
+        "en": "Building Information Modeling (BIM) platform"
+    },
+    "Experience.chrono": {
+        "ru": "ChronoPay",
+        "en": "ChronoPay"
+    },
+    "Experience.chrono_date": {
+        "ru": "Июнь 2021 - Февраль 2022",
+        "en": "Jun 2021 - Feb 2022"
+    },
+    "Experience.chrono_exp1": {
+        "ru": "Разрабатывал и поддерживал высоконагруженного Telegram-бота для внутренних пользователей: проектировал архитектуру, реализовал агрегацию и трансформацию данных из нескольких источников (базы данных, внешние API), обеспечил стабильную работу под высокой нагрузкой.",
+        "en": "Developed and maintained a high-load Telegram bot for internal users, designing its architecture and implementing data aggregation and transformation from multiple sources (databases and external APIs), ensuring reliable performance under heavy load."
+    },
+    "Experience.chrono_exp1_bold": {
+        "ru": "Разрабатывал и поддерживал высоконагруженного Telegram-бота",
+        "en": "Developed and maintained a high-load Telegram bot"
+    },
+    "Experience.chrono_exp2": {
+        "ru": "Отвечал за ключевой платежный функционал: разработал и внедрил безопасную форму ввода банковских карт с последующей переадресацией на 3DS-аутентификацию, что гарантировало полное соответствие отраслевым стандартам безопасности (PCI DSS).",
+        "en": "Owned the core payment functionality by designing and implementing a secure bank card input form with subsequent 3D Secure (3DS) authentication redirection, ensuring full compliance with PCI DSS security standards."
+    },
+    "Experience.chrono_exp2_bold": {
+        "ru": "Отвечал за ключевой платежный функционал",
+        "en": "Owned the core payment functionality"
+    },
+    "Experience.chrono_exp3": {
+        "ru": "Участвовал в полном цикле разработки и запуска реферальной программы: от проектирования бизнес-логики начисления бонусов и создания административного интерфейса до интеграции с платежной системой и анализа эффективности.",
+        "en": "Participated in the full lifecycle of the referral program development and launch, from designing the bonus accrual business logic and building an administrative interface to integrating with the payment system and analyzing program performance."
+    },
+    "Experience.chrono_exp3_bold": {
+        "ru": "Участвовал в полном цикле разработки и запуска реферальной программы",
+        "en": "Participated in the full lifecycle of the referral program development and launch"
+    },
+    "Experience.chrono_exp4": {
+        "ru": "Оптимизировал процессы взаимодействия с базой данных, что сократило время отклика ключевых отчетных интерфейсов.",
+        "en": "Optimized database interaction processes, significantly reducing response times for key reporting interfaces."
+    },
+    "Experience.chrono_exp4_bold": {
+        "ru": "Оптимизировал процессы взаимодействия с базой данных",
+        "en": "Optimized database interaction processes"
+    },
+    "Experience.technologies": {
+        "ru": "Технологии",
+        "en": "Technologies"
+    },
+    "Skills.title": {
+        "ru": "Навыки",
+        "en": "Skills"
+    },
+    "Common.frontend": {
+        "ru": "Frontend Разработчик",
+        "en": "Frontend Developer"
+    },
+    "Common.fullstack": {
+        "ru": "Fullstack Разработчик",
+        "en": "Fullstack Developer"
+    },
+    "Common.moscow": {
+        "ru": "Москва",
+        "en": "Moscow"
     }
-        
 }
