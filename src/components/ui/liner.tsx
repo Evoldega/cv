@@ -23,7 +23,7 @@ export default function Liner({size = "l", expanded = false, className = "", ...
                 width: "16px",
                 borderRadius: "12px",
                 background: "rgba(255, 255, 255, 1)",
-                boxShadow,
+                //boxShadow,
 
             }}>
                 <Image

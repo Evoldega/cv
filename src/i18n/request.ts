@@ -1,37 +1,36 @@
-import { getRequestConfig } from 'next-intl/server';
-import { routing } from '@/i18n/routing';
+import {getRequestConfig} from 'next-intl/server';
+import {routing} from '@/i18n/routing';
 import translations from '@/messages/translations.json';
 
-function nestMessages(locale: 'ru' | 'en') {
-  const result: Record<string, any> = {};
+type Locale = (typeof routing.locales)[number];
+
+function nestMessages(locale: Locale) {
+  const result: Record<string, unknown> = {};
 
   for (const [flatKey, value] of Object.entries(translations)) {
-    const parts = flatKey.split('.');
+    const keys = flatKey.split('.');
     let current = result;
 
-    while (parts.length > 1) {
-      const part = parts.shift()!;
-      current[part] ??= {};
-      current = current[part];
+    while (keys.length > 1) {
+      const key = keys.shift()!;
+      current[key] ??= {};
+      current = current[key] as Record<string, unknown>;
     }
 
-    current[parts[0]] = value[locale];
+    current[keys[0]] = value[locale];
   }
 
   return result;
 }
 
-export default getRequestConfig(async ({ locale }) => {
-  const currentLocale = routing.locales.includes(locale as any)
-    ? locale
-    : routing.defaultLocale;
+export default getRequestConfig(async ({requestLocale}) => {
+  const locale = await requestLocale;
 
-  const messages = Object.fromEntries(
-    Object.entries(translations).map(([key, value]) => [
-      key,
-      value[currentLocale]
-    ])
-  );
+  console.log('REQUEST LOCALE:', locale);
+
+  const currentLocale = routing.locales.includes(locale as Locale)
+    ? (locale as Locale)
+    : routing.defaultLocale;
 
   return {
     locale: currentLocale,

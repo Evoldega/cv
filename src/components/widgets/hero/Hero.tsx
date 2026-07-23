@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Text from "@/components/ui/text";
 import { getTranslations } from 'next-intl/server';
+import { LanguageSwitcher } from "@/components/common/languageSwitcher";
 
 
 export default async function Hero() {
@@ -15,10 +16,12 @@ export default async function Hero() {
             height={80}
             alt="developer"
             className="rounded-md"
+            loading="eager"
         />
         <div className="flex flex-col items-start justify-start ml-4">
           <Text variant="h1">{t("Hero.fullName")}</Text>
           <Text className="text-violet-500" variant="h2">{t("Common.frontend")}</Text>
+          <LanguageSwitcher />
         </div>
       </div>
       <div className="flex flex-col items-start justify-start ml-8">
