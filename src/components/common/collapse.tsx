@@ -22,7 +22,7 @@ export default function Collapse({
 
     const [isOpen, setIsOpen] = useState(expanded);
 
-    const fade = isOpen ? "animate-in fade-in slide-in-from-top-2 duration-500" : "animate-out fade-out slide-in-to-top-2 duration-300"
+    const fade = isOpen ? "animate-in fade-in slide-in-from-top-2 duration-500" : "animate-out fade-out duration-350"
 
     return (
         <Collapsible className="w-full" open={isOpen} onOpenChange={setIsOpen}>

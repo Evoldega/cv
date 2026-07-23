@@ -43,8 +43,8 @@ export default async function Skills() {
 				content={
 					<div className="flex flex-wrap gap-[8px]">
 						{
-							Object.keys(skills).map((direction) => (
-								<div className="flex flex-wrap gap-[4px]">
+							Object.keys(skills).map((direction, index) => (
+								<div key={index} className="flex flex-wrap gap-[4px]">
 									{
 										skills[direction].map((group: string[], index: number) => (
 											<div className="flex items-center" key={`${direction}-${index}`}>
@@ -52,7 +52,7 @@ export default async function Skills() {
 													group.map((skill: string, index: number ) => (
 														<Chip
 															key={index}
-															className={`bg-[${primaryGradient}] mr-[4px]`}
+															className={`bg-[linear-gradient(90deg,rgba(164,120,232,1)_0%,rgba(81,108,247,1)_100%)] mr-[4px]`}
 														>
 															<p className="font-[500] text-[7px] text-white">
 																{ skill }
