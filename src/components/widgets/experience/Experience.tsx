@@ -1,5 +1,3 @@
-
-
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
 import Company from "@/components/widgets/experience/Company";
@@ -8,13 +6,16 @@ import { getTranslations } from 'next-intl/server';
 import { getDescription } from "@/lib/utils";
 
 
-export default async function Experience() {
+export default async function Experience({
+    expanded = false
+}: { expanded?: boolean }) {
 
   const t = await getTranslations();
   
   return (
     <section className="flex flex-row mt-[16px]">
         <Collapse 
+            expanded={expanded}
             title={
                 <Text variant="h2">
                     {t("Experience.title")}

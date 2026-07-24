@@ -27,21 +27,22 @@ const skills: any = {
 	]
 };
 
-export default async function Skills() {
-
+export default async function Skills({
+    expanded = false
+}: { expanded?: boolean }) {
     const t = await getTranslations();
-	const primaryGradient = "linear-gradient(90deg,rgba(164,120,232,1)_0%,rgba(81,108,247,1)_100%)";
 
 	return (
 		<section>
 			<Collapse 
+				expanded={expanded}
 				title={
 					<Text variant="h2">
 						{t("Skills.title")}
 					</Text>
 				}
 				content={
-					<div className="flex flex-wrap gap-[8px]">
+					<div className="flex flex-wrap gap-[8px] mb-[16px]">
 						{
 							Object.keys(skills).map((direction, index) => (
 								<div key={index} className="flex flex-wrap gap-[4px]">

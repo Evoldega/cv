@@ -28,7 +28,7 @@ export default function Company({
   return (
     <section className="flex">
         <Liner size="m" expanded={true} />
-        <div>
+        <div className="w-full">
             <section className="flex flex-row items-between justify-between">
                 <div className="flex flex-row ">
                     <Image
@@ -65,7 +65,7 @@ export default function Company({
                     </div>
                 </div>
             </section>
-            <section className="w-100 mt-[8px]">
+            <section className="w-full mt-[8px]">
                 {
                     description.map((desc, index) => (
                         <div key={index} className="flex flex-row items-start mb-[4px]">

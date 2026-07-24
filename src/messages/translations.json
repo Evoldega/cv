@@ -123,6 +123,30 @@
         "ru": "Технологии",
         "en": "Technologies"
     },
+    "Education.title": {
+        "ru": "Образование",
+        "en": "Education"
+    },
+    "Education.inst_name_1": {
+        "ru": "Центр компьютерного обучения \"Специалист\" Учебно-научного центра при МГТУ им Н.Э. Баумана",
+        "en": "Specialist Computer Training Center at Bauman Moscow State Technical University"
+    },
+    "Education.course_1": {
+        "ru": "Основы веб программирования",
+        "en": "Fundamentals of Web Programming"
+    },
+    "Education.date_1": {
+        "ru": "Апрель 2019",
+        "en": "Apr 2019"
+    },
+    "Education.course_2": {
+        "ru": "Продвинутый JavaScript",
+        "en": "Advanced JavaScript"
+    },
+    "Education.date_2": {
+        "ru": "Ноябрь 2019",
+        "en": "Nov 2019"
+    },
     "Skills.title": {
         "ru": "Навыки",
         "en": "Skills"
