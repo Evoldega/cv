@@ -8,9 +8,9 @@ export default function CV() {
     <section className="flex flex-col items-center justify-center py-[24px] max-w-[480px] w-full">
         <div className="w-full">
           <Hero />
-          <Experience />
-          <Skills />
-          <Education />
+          <Experience expanded />
+          <Skills expanded />
+          <Education expanded />
         </div>
     </section>
   );

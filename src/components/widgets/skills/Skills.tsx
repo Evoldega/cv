@@ -27,13 +27,15 @@ const skills: any = {
 	]
 };
 
-export default async function Skills() {
-
+export default async function Skills({
+    expanded = false
+}: { expanded?: boolean }) {
     const t = await getTranslations();
 
 	return (
 		<section>
 			<Collapse 
+				expanded={expanded}
 				title={
 					<Text variant="h2">
 						{t("Skills.title")}

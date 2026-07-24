@@ -22,15 +22,18 @@ export default function Collapse({
 
     const [isOpen, setIsOpen] = useState(expanded);
 
-    const fade = isOpen ? "animate-in fade-in slide-in-from-top-2 duration-500" : "animate-out fade-out duration-350"
+    const fadeIn = "animate-in fade-in slide-in-from-top-2 duration-500";
+    const fadeOut = "animate-out fade-out duration-350";
+
+    const animation = isOpen ? fadeIn : fadeOut;
 
     return (
         <Collapsible className="w-full" open={isOpen} onOpenChange={setIsOpen}>
             <div className="flex flex-row w-full">
-                <Liner expanded={isOpen} className={fade} />
+                <Liner expanded={isOpen} className={animation} />
                 <div className="flex flex-col items-start w-full">
-                    <CollapsibleTrigger className={`flex justify-start w-full cursor-pointer hover:text-violet-500 ${isOpen ? "text-violet-500 mb-[16px]" : ""} sticky top-0 z-10 bg-white`}>{ title }</CollapsibleTrigger>
-                    <CollapsibleContent className={`${fade} w-full`}>
+                    <CollapsibleTrigger className={`${fadeIn} flex justify-start w-full cursor-pointer hover:text-violet-500 ${isOpen ? "text-violet-500 mb-[16px]" : ""} sticky top-0 z-10 bg-white`}>{ title }</CollapsibleTrigger>
+                    <CollapsibleContent className={`${animation} w-full`}>
                         { content }
                     </CollapsibleContent>
                 </div>

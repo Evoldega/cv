@@ -6,8 +6,9 @@ import Collapse from "@/components/common/collapse";
 import { getTranslations } from 'next-intl/server';
 import Card from "./Card";
 
-export default async function Education() {
-
+export default async function Education({
+    expanded = false
+}: { expanded?: boolean }) {
     const t = await getTranslations();
   
     const edus = [
@@ -29,6 +30,7 @@ export default async function Education() {
     return (
         <section className="flex flex-row">
             <Collapse
+                expanded={expanded}
                 title={
                     <Text variant="h2">
                         {t("Education.title")}
