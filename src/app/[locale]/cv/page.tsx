@@ -1,3 +1,4 @@
+import Education from "@/components/widgets/education/Education";
 import Experience from "@/components/widgets/experience/Experience";
 import Hero from "@/components/widgets/hero/Hero";
 import Skills from "@/components/widgets/skills/Skills";
@@ -8,7 +9,8 @@ export default function CV() {
         <div className="w-full">
           <Hero />
           <Experience />
-          <Skills />      
+          <Skills />
+          <Education />
         </div>
     </section>
   );

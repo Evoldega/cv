@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter } from "next/font/google";
 
 import "./globals.css";
 import "@fontsource/outfit";
+import "@fontsource/roboto";
 
 import { cn } from "@/lib/utils";
 
@@ -21,7 +22,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"]
 });
-
 
 export const metadata: Metadata = {
   title: "CV",
@@ -49,7 +49,7 @@ export default function RootLayout({
         inter.variable
       )}
     >
-      <body className="min-h-full flex flex-col items-center">
+      <body className="min-h-full flex flex-col items-center px-[24px]">
         {children}
       </body>
     </html>
