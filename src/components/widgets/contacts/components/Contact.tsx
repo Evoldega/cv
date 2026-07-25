@@ -1,17 +1,20 @@
 import Image from "next/image";
+import Link from 'next/link'
 
 interface IContact {
     image: string;
     ext: string;
     title: string;
     content: string;
+    href?: string;
 }
 
 export default async function Contact({
     image,
     ext,
     title,
-    content
+    content,
+    href
 }: IContact) {  
   return (
     <div className="flex w-fit h-max-[20px] gap-[8px]">
@@ -26,7 +29,17 @@ export default async function Contact({
         </div>
         <div className="flex flex-col items-between">
             <p className="h-fit font-[400] text-[6px] leading-[8px] text-gray-500">{title}</p>
-            <p className="h-fit font-[500] text-[7px] leading-[9px]">{content}</p>
+            {
+                href ?
+                <Link 
+                    className="h-fit font-[500] text-[7px] leading-[9px]"
+                    target="_blank"
+                    href={href === content ? content : href + content}
+                >
+                    {content}
+                </Link> :
+                <p className="h-fit font-[500] text-[7px] leading-[9px]">{content}</p>
+            }
         </div>
     </div>
   );

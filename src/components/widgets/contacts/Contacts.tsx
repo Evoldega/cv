@@ -10,23 +10,26 @@ export default async function Contacts() {
         {
             image: "mail",
             ext: "svg",
-            title: "Email",
-            content: "gwinp@yandex.ru"
+            title: t("Contacts.mail"),
+            content: "gwinp@yandex.ru",
+            href: "mailto:"
         }, {
             image: "link",
             ext: "svg",
             title: "Github",
-            content: "https://github.com/Evoldega"
+            content: "https://github.com/Evoldega",
+            href: "https://github.com/Evoldega"
         }, {
             image: "phone",
             ext: "svg",
-            title: "Phone",
-            content: "+7 (977) 399-01-05"
+            title: t("Contacts.phone"),
+            content: "+7 (977) 399-01-05",
+            href: "tel:"
         }, {
             image: "location",
             ext: "svg",
-            title: "Adress",
-            content: "Moscow, Russia"
+            title: t("Contacts.adress"),
+            content: `${t("Common.russia")}, ${t("Common.moscow")}`
         },
     ]
 
@@ -40,7 +43,8 @@ export default async function Contacts() {
                         ext={cont.ext}
                         title={cont.title}
                         content={cont.content}
-                    />                                
+                        href={cont.href}
+                    />
                 ))
             }
         </div>

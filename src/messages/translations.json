@@ -151,6 +151,18 @@
         "ru": "Навыки",
         "en": "Skills"
     },
+    "Contacts.mail": {
+        "ru": "Почта",
+        "en": "Email"
+    },
+    "Contacts.phone": {
+        "ru": "Телефон",
+        "en": "Phone"
+    },
+    "Contacts.adress": {
+        "ru": "Адрес",
+        "en": "Adress"
+    },
     "Common.frontend": {
         "ru": "Frontend Разработчик",
         "en": "Frontend Developer"
@@ -162,5 +174,9 @@
     "Common.moscow": {
         "ru": "Москва",
         "en": "Moscow"
+    },
+    "Common.russia": {
+        "ru": "Россия",
+        "en": "Russia"
     }
 }
