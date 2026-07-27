@@ -1,25 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Roboto, Outfit } from "next/font/google";
 
 import "./globals.css";
 import "@fontsource/outfit";
 import "@fontsource/roboto";
-
 import { cn } from "@/lib/utils";
 
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans"
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin", "cyrillic"]
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"]
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"]
 });
 
@@ -33,23 +26,23 @@ export const viewport = {
   initialScale: 1,
 };
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode;
-}) {
+
+export default function RootLayout(
+  { children }: 
+  { 
+    children: React.ReactNode;
+  }
+) {
+
   return (
-    <html
-      className={cn(
+    <html className={
+      cn(
         "h-full",
         "antialiased",
-        geistSans.variable,
-        geistMono.variable,
-        "font-sans",
-        inter.variable
-      )}
-    >
-      <body className="min-h-full flex flex-col items-center px-[24px]">
+        //roboto.variable
+      )
+    }>
+      <body className="h-full flex flex-col items-center px-[24px]">
         {children}
       </body>
     </html>

@@ -13,7 +13,7 @@ export default async function Experience({
   const t = await getTranslations();
   
   return (
-    <section className="flex flex-row mt-[16px]">
+    <section className="flex flex-row">
         <Collapse 
             expanded={expanded}
             title={

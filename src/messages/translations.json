@@ -163,6 +163,10 @@
         "ru": "Адрес",
         "en": "Adress"
     },
+    "Socials.title": {
+        "ru": "Социальные сети",
+        "en": "Socials"
+    },
     "Common.frontend": {
         "ru": "Frontend Разработчик",
         "en": "Frontend Developer"

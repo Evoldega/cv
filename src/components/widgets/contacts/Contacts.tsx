@@ -1,8 +1,12 @@
 import { getTranslations } from 'next-intl/server';
-import Contact from "@/components/widgets/contacts/components/Contact";
+import Contact from "@/components/common/Contact";
 
+interface IContacts {
+    className?: string;
+    [key: string]: any
+}
 
-export default async function Contacts() {
+export default async function Contacts({ className, ...props }: IContacts) {
 
     const t = await getTranslations();
   
@@ -34,7 +38,7 @@ export default async function Contacts() {
     ]
 
     return (
-        <div className="flex flex-wrap gap-[4px]">
+        <div className={className ?? "flex flex-wrap gap-[4px]"} {...props}>
             {
                 contacts.map((cont, index) => (
                     <Contact
