@@ -11,9 +11,9 @@ import {
 import Liner from "@/components/ui/liner";
 
 interface ICollapse {
-    title: React.ReactNode,
-    content: React.ReactNode,
-    expanded?: boolean,
+    title: React.ReactNode;
+    content: React.ReactNode;
+    expanded?: boolean;
 }
 
 export default function Collapse({ 
@@ -32,7 +32,7 @@ export default function Collapse({
             <div className="flex flex-row w-full">
                 <Liner expanded={isOpen} className={animation} />
                 <div className="flex flex-col items-start w-full">
-                    <CollapsibleTrigger className={`${fadeIn} flex justify-start w-full cursor-pointer hover:text-violet-500 ${isOpen ? "text-violet-500 mb-[16px]" : ""} sticky top-0 z-10 bg-white`}>{ title }</CollapsibleTrigger>
+                    <CollapsibleTrigger className={`${fadeIn} flex justify-start w-full cursor-pointer hover:text-violet-400 ${isOpen ? "text-violet-500" : ""} sticky top-0 z-10 bg-white`}>{ title }</CollapsibleTrigger>
                     <CollapsibleContent className={`${animation} w-full`}>
                         { content }
                     </CollapsibleContent>

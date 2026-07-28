@@ -19,15 +19,17 @@ export function LanguageSwitcher() {
     const pathname = usePathname();
     const router = useRouter();
 
+    const iconWidth = 32;
+
     return (
     <Popover>
         <PopoverTrigger render={
             <button>
                 <Image
                     src={`/flags/${locale}.svg`}
-                    className="cursor-pointer"
-                    width={16}
-                    height={12}
+                    className="cursor-pointer rounded-[4px]"
+                    width={iconWidth}
+                    height={1}
                     alt={locale}
 
                 />                   
@@ -38,19 +40,15 @@ export function LanguageSwitcher() {
             {
                 locales.map((locale, index) => (
 
-                    <div 
-                        className="flex justify-center cursor-pointer w-[24px] h-[16px] hover:bg-gray-400 rounded-[4px]"
-                        key={index}
-                    >
                         <Image
+                            key={index}
+                            className="cursor-pointer rounded-[4px]"
                             src={`/flags/${locale}.svg`}
                             onClick={() => router.replace(pathname, { locale })}
-                            width={16}
-                            height={12}
+                            width={iconWidth}
+                            height={1}
                             alt={locale}
                         />                                
-                    </div>
-
                 ))
             }
         </PopoverContent>

@@ -10,24 +10,25 @@ export default async function Hero() {
   
   return (
     <section className="flex flex-row items-stretch justify-start">
-      <div className="flex flex-row w-full items-stretch justify-start gap-[16px]">
+      <div className="flex gap-[32px] flex-row flex-wrap lg:flex-nowrap grow items-stretch justify-start">
         <Image
             src="/avatar.png"
-            width={156}
-            height={80}
+            width={600}
+            height={1}
             alt="developer"
             className="rounded-md"
             loading="eager"
         />
-        <div className="flex flex-col items-between justify-between">
-          <div>
-            <div className="flex w-full justify-between">
+        <div className="flex flex-col gap-[32px] grow items-between">
+          <div className="flex flex-col gap-[12px]">
+            <div className="flex justify-between">
               <Text variant="h1">{t("Hero.fullName")}</Text>
               <LanguageSwitcher />
             </div>
             <Text className="text-violet-500" variant="h2">{t("Common.frontend")}</Text>            
           </div>
-          <Contacts />
+          <Contacts className="flex flex-col flex-wrap gap-[24px] max-w-[640px]" />
+          
         </div>
       </div>
     </section>

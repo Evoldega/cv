@@ -22,19 +22,18 @@ interface ISocials {
 
 export default async function Socials({ className, ...props }: ISocials) {
     return(
-        <div className={className ?? "flex flex-wrap gap-[4px]"} {...props}>
+        <div className={className ?? "flex flex-wrap gap-[8px]"} {...props}>
             {
                 socials.map((soc, index) => (
                     <Contact
                         key={index}
                         customImage={
-                            <div className="flex justify-center items-center bg-gray-100 rounded-[50%] w-[16px] h-[16px]">
+                            <div className="flex justify-center items-center rounded-[50%] w-[34px] h-[34px]">
                                 <Image
                                     src={`/${soc.image}`}
-                                    width={16}
-                                    height={16}
+                                    width={34}
+                                    height={34}
                                     alt={soc.content}
-                                    className="rounded-md"
                                 />
                             </div>
                         }

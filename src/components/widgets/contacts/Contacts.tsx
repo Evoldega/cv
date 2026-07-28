@@ -38,7 +38,7 @@ export default async function Contacts({ className, ...props }: IContacts) {
     ]
 
     return (
-        <div className={className ?? "flex flex-wrap gap-[4px]"} {...props}>
+        <div className={className ?? "flex flex-wrap gap-[24px]"} {...props}>
             {
                 contacts.map((cont, index) => (
                     <Contact

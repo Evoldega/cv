@@ -1,3 +1,5 @@
+import Text from "@/components/ui/text";
+
 interface IHighlightText {
   text: string;
   boldWords: string[];
@@ -33,9 +35,7 @@ export default function HighlightText({ text, boldWords }: IHighlightText) {
         if (i % 2 === 1) {
           // Это совпадение фразы
           newResult.push(
-            <strong key={keyCounter++} className="font-[400] text-[8px] text-black">
-              {segment}
-            </strong>
+            <Text variant="btn" className="text-black" key={keyCounter++}>{segment}</Text>
           );
         } else if (segment) {
           newResult.push(segment);
@@ -46,7 +46,7 @@ export default function HighlightText({ text, boldWords }: IHighlightText) {
     result = newResult;
   }
 
-  return <p className="w-full max-w-full overflow-wrap-anywhere break-words whitespace-pre-wrap hyphens-auto font-[400] text-[8px] text-gray-700">{result}</p>;
+  return <Text variant="p" className="text-gray-700">{result}</Text>;
 }
 
 // Вспомогательная функция для экранирования спецсимволов в RegExp

@@ -1,9 +1,14 @@
+import Contact from "@/components/common/Contact";
 import HighlightText from "@/components/common/highlightText";
 import Liner from "@/components/ui/liner";
+import Text from "@/components/ui/text";
 import Image from "next/image";
 
 interface ICompany {
-    image: string,
+    image: {
+        name: string,
+        ext: string
+    },
     role: string,
     company: string,
     date: string,
@@ -30,51 +35,43 @@ export default function Company({
         <Liner size="m" expanded={true} />
         <div className="w-full">
             <section className="flex flex-row items-between justify-between">
-                <div className="flex flex-row ">
-                    <Image
-                        className="mr-[8px] rounded-[50%]"
-                        src={`/${image}`}
-                        width={20}
-                        height={20}
-                        alt={image}
-                    />
-                    <div className="flex flex-col justify-between">
-                        <p className="font-[400] text-[6px]">
-                            {role}
-                        </p>
-                        <p className="font-[500] text-[7px]">
-                            {company}
-                        </p>
-                    </div>
-                </div>
+                <Contact
+                    customImage={
+                        <Image
+                            className="rounded-[50%]"
+                            src={`/${image.name}.${image.ext}`}
+                            width={34}
+                            height={1}
+                            alt={image.name}
+                        />
+                    }
+                    title={role}
+                    content={company}
+                />
                 <div className="flex flex-col justify-between items-end">
-                    <p className="font-[400] text-[5px]">
-                        {date}
-                    </p>
+                    <Text variant="cap1">{date}</Text>
                     <div className="flex flex-row">
                         <Image
                             className="mr-[2px]"
                             src="/location.svg"
-                            width={6}
-                            height={6}
+                            width={14}
+                            height={14}
                             alt="location"
                         />
-                        <p className="font-[400] text-[5px]">
-                            {location}
-                        </p>
+                        <Text variant="cap1">{location}</Text>
                     </div>
                 </div>
             </section>
-            <section className="w-full mt-[8px]">
+            <section className="w-full mt-[24px]">
                 {
                     description.map((desc, index) => (
                         <div key={index} className="flex flex-row items-start mb-[4px]">
-                            <div className="flex justify-center w-[12px] h-[14px]">
+                            <div className="flex-shrink-0 flex justify-center w-[24px] h-[20px]">
                                 <Image
                                     className="stroke-gray-200"
                                     src="/gray_dot.svg"
-                                    width={2}
-                                    height={2}
+                                    width={3}
+                                    height={3}
                                     alt="dot"
                                 />                                
                             </div>
@@ -86,10 +83,10 @@ export default function Company({
                         </div>
                     ))
                 }
-                <p className="font-[400] text-[8px] mb-[16px]">
-                    {stack}
-                </p>
-            </section>            
+                <div className="my-[24px]">
+                    <Text variant="btn">{stack}</Text>
+                </div>
+            </section>
         </div>
 
     </section>

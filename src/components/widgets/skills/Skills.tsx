@@ -37,27 +37,25 @@ export default async function Skills({
 			<Collapse 
 				expanded={expanded}
 				title={
-					<Text variant="h2">
+					<Text variant="h2" className="mb-[32px]">
 						{t("Skills.title")}
 					</Text>
 				}
 				content={
-					<div className="flex flex-wrap gap-[8px] mb-[16px]">
+					<div className="flex flex-wrap flex-col gap-[32px] mb-[32px]">
 						{
 							Object.keys(skills).map((direction, index) => (
-								<div key={index} className="flex flex-wrap gap-[4px]">
+								<div key={index} className="flex flex-wrap gap-[8px]">
 									{
 										skills[direction].map((group: string[], index: number) => (
-											<div className="flex items-center" key={`${direction}-${index}`}>
+											<div className="flex flex-wrap items-center" key={`${direction}-${index}`}>
 												{
 													group.map((skill: string, index: number ) => (
 														<Chip
 															key={index}
-															className={`bg-[linear-gradient(90deg,rgba(164,120,232,1)_0%,rgba(81,108,247,1)_100%)] mr-[4px]`}
+															className={`bg-[linear-gradient(90deg,rgba(164,120,232,1)_0%,rgba(81,108,247,1)_100%)] mr-[8px]`}
 														>
-															<p className="font-[500] text-[7px] text-white">
-																{ skill }
-															</p>
+															<Text variant="cap2" className="text-white">{skill}</Text>
 														</Chip>
 													))
 												}
