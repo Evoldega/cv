@@ -8,8 +8,7 @@ interface ILiner {
 }
 
 export default function Liner({size = "l", expanded = false, className = "", ...props}: ILiner): React.ReactElement {
-    const marginRight = size === "l" ? "mr-[16px]" : "mr-[8px]";
-    const boxShadow = size === "l" ? "inset 0px 1px 1px 0px rgba(0, 0, 0, 0.04), 0px 6px 24px 0px rgba(0, 0, 0, 0.04), 0px 1px 4px 0px rgba(0, 0, 0, 0.05)" : ""
+    const marginRight = size === "l" ? "mr-[32px]" : "mr-[16px]";
     const color = size === "l" ? "bg-gray-200" : "bg-gray-100"
 
     return (
@@ -19,17 +18,15 @@ export default function Liner({size = "l", expanded = false, className = "", ...
                 justifyContent: "center",
                 alignItems: "center",
                 flexShrink: 0,
-                height: "16px",
-                width: "16px",
+                height: "20px",
+                width: "20px",
                 borderRadius: "12px",
                 background: "rgba(255, 255, 255, 1)",
-                //boxShadow,
-
             }}>
                 <Image
                     src={size === "l" ? "/dot.svg" : "/small_dot.svg"}
-                    width={size === "l" ? 10 : 3}
-                    height={size === "l" ? 10 : 3}
+                    width={size === "l" ? 14 : 5}
+                    height={size === "l" ? 14 : 5}
                     alt="dot"
                 />
             </div>

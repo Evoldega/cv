@@ -1,10 +1,8 @@
-
-
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
+import Card from "@/components/widgets/education/Card";
 
 import { getTranslations } from 'next-intl/server';
-import Card from "./Card";
 
 export default async function Education({
     expanded = false
@@ -32,12 +30,12 @@ export default async function Education({
             <Collapse
                 expanded={expanded}
                 title={
-                    <Text variant="h2">
+                    <Text variant="h2" className="mb-[32px]">
                         {t("Education.title")}
                     </Text>
                 }
                 content={
-                    <div className="flex f-row justify-center gap-[4px]">
+                    <div className="flex justify-center flex-wrap gap-[16px]">
                         {
                             edus.map((edu, index) => (
                                 <Card

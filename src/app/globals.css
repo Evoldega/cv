@@ -5,9 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 * {
-  font-family: "Outfit", "Roboto";
+  font-family: "Roboto";
   box-sizing: border-box;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
 }

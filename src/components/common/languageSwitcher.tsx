@@ -1,59 +1,75 @@
 'use client';
 
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/navigation';
 import { routing } from '@/i18n/routing';
+
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
-} from "@/components/ui/popover"
+} from "@/components/ui/popover";
 
 import Image from "next/image";
 
 export function LanguageSwitcher() {
+    const t = useTranslations();
 
     const { locales } = routing;
     const locale = useLocale();
     const pathname = usePathname();
     const router = useRouter();
 
+    const iconWidth = 32;
+
     return (
-    <Popover>
-        <PopoverTrigger render={
-            <button>
-                <Image
-                    src={`/flags/${locale}.svg`}
-                    className="cursor-pointer"
-                    width={16}
-                    height={12}
-                    alt={locale}
+        <Popover>
+            <Tooltip>
+                <PopoverTrigger
+                    render={
+                        <TooltipTrigger
+                            render={
+                                <button
+                                    type="button"
+                                    className="flex justify-center"
+                                />
+                            }
+                        />
+                    }
+                >
+                    <Image
+                        src={`/flags/${locale}.svg`}
+                        className="cursor-pointer rounded-[4px]"
+                        width={iconWidth}
+                        height={24}
+                        alt={locale}
+                    />
+                </PopoverTrigger>
 
-                />                   
-            </button>
-        }>
-        </PopoverTrigger>
-        <PopoverContent className="w-fit h-fit p-[8px] rounded-[12px] gap-2">
-            {
-                locales.map((locale, index) => (
+                <TooltipContent align="end">
+                    {t("Common.change_lang")}
+                </TooltipContent>
+            </Tooltip>
 
-                    <div 
-                        className="flex justify-center cursor-pointer w-[24px] h-[16px] hover:bg-gray-400 rounded-[4px]"
-                        key={index}
-                    >
-                        <Image
-                            src={`/flags/${locale}.svg`}
-                            onClick={() => router.replace(pathname, { locale })}
-                            width={16}
-                            height={12}
-                            alt={locale}
-                        />                                
-                    </div>
-
-                ))
-            }
-        </PopoverContent>
-    </Popover>
+            <PopoverContent className="w-fit h-fit p-[8px] rounded-[12px] gap-2">
+                {locales.map((item) => (
+                    <Image
+                        key={item}
+                        className="cursor-pointer rounded-[4px]"
+                        src={`/flags/${item}.svg`}
+                        onClick={() => router.replace(pathname, { locale: item })}
+                        width={iconWidth}
+                        height={24}
+                        alt={item}
+                    />
+                ))}
+            </PopoverContent>
+        </Popover>
     );
 }

@@ -13,18 +13,18 @@ export default async function Experience({
   const t = await getTranslations();
   
   return (
-    <section className="flex flex-row mt-[16px]">
+    <section className="flex flex-row">
         <Collapse 
             expanded={expanded}
             title={
-                <Text variant="h2">
+                <Text variant="h2" className="mb-[32px]">
                     {t("Experience.title")}
                 </Text>
             }
             content={
                 <>
                     <Company 
-                        image="atom_logo.png"
+                        image={{ name: "atom_logo", ext: "png" }}
                         role={t("Common.frontend")}
                         company={t("Experience.rosatom")}
                         date={t("Experience.rosatom_date")}
@@ -33,7 +33,7 @@ export default async function Experience({
                         stack={`${t("Experience.technologies")}: React, TypeScript, MobX, GraphQL, NestJS (BFF), i18n, C3D Toolkit, Prisma, PostgreSQL, WebSocket, PWA, SAFe.`}
                     />
                     <Company 
-                        image="chrono_logo.jpg"
+                        image={{ name: "chrono_logo", ext: "jpg" }}
                         role={t("Common.fullstack")}
                         company={t("Experience.chrono")}
                         date={t("Experience.chrono_date")}

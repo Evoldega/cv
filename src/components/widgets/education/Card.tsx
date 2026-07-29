@@ -1,3 +1,4 @@
+import Text from "@/components/ui/text";
 import Image from "next/image";
 
 interface ICard {
@@ -16,30 +17,24 @@ export default async function Card({
     date
 }: ICard) {
   return (
-    <div className="flex flex-col gap-[4px] w-fit py-[12px] px-[8px] bg-gray-100 rounded-[6px]">
-        <div className="flex justify-between">
+    <div className="flex flex-col gap-[8px] w-fit py-[24px] px-[16px] bg-gray-100 rounded-[6px] shadow-md">
+        <div className="flex flex-wrap gap-[24px] justify-between">
             <div>
                 <Image
-                    className="mr-[8px] rounded-[50%]"
+                    className="rounded-[50%]"
                     src={`/${image}.${ext}`}
                     alt={image}
-                    width={24}
-                    height={24}
+                    width={48}
+                    height={48}
                 />
             </div>
-            <div className="max-w-[103px]">
-                <p className="font-[500] text-[6px] leading-[8px]">
-                    {institution}
-                </p>
+            <div className="max-w-[300px]">
+                <Text variant="sub2">{institution}</Text>
             </div>
         </div>
-        <div className="max-w-[135px]">
-            <p className="font-[500] text-[7px] leading-[9px]">
-                {course}
-            </p>
-            <p className="font-[400] text-[5px] text-gray-400 leading-[7px]">
-                {date}
-            </p>
+        <div className="flex flex-col gap-[8px]">
+            <Text variant="sub1">{course}</Text>
+            <Text variant="cap1">{date}</Text>
         </div>
     </div>
   );
