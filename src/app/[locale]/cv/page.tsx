@@ -3,6 +3,7 @@ import Socials from "@/components/widgets/contacts/Socials";
 import Education from "@/components/widgets/education/Education";
 import Experience from "@/components/widgets/experience/Experience";
 import Hero from "@/components/widgets/hero/Hero";
+import LastProjects from "@/components/widgets/last_projects/LastProjects";
 import Skills from "@/components/widgets/skills/Skills";
 
 
@@ -12,6 +13,7 @@ export default function CV() {
         <div className="flex flex-col w-full h-full">
           <Hero />
           <div className="py-[64px] grow">
+            <LastProjects expanded/>
             <Experience expanded />
             <Skills expanded />
             <Education expanded />

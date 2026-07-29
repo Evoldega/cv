@@ -3,7 +3,7 @@ import Text from "@/components/ui/text";
 import { getTranslations } from 'next-intl/server';
 import { LanguageSwitcher } from "@/components/common/languageSwitcher";
 import Contacts from "../contacts/Contacts";
-
+import { DownloadCV } from "@/components/common/downloadCV";
 
 export default async function Hero() {
   const t = await getTranslations();
@@ -23,12 +23,14 @@ export default async function Hero() {
           <div className="flex flex-col gap-[12px]">
             <div className="flex justify-between">
               <Text variant="h1">{t("Hero.fullName")}</Text>
-              <LanguageSwitcher />
+              <div className="flex gap-[8px]">
+                <DownloadCV />
+                <LanguageSwitcher />
+              </div>
             </div>
             <Text className="text-violet-500" variant="h2">{t("Common.frontend")}</Text>            
           </div>
           <Contacts className="flex flex-col flex-wrap gap-[24px] max-w-[640px]" />
-          
         </div>
       </div>
     </section>

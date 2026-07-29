@@ -1,10 +1,8 @@
-
-
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
+import Card from "@/components/widgets/education/Card";
 
 import { getTranslations } from 'next-intl/server';
-import Card from "./Card";
 
 export default async function Education({
     expanded = false

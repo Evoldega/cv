@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
 import { Separator } from "@/components/ui/separator";
@@ -48,7 +49,7 @@ export default async function Skills({
 								<div key={index} className="flex flex-wrap gap-[8px]">
 									{
 										skills[direction].map((group: string[], index: number) => (
-											<div className="flex flex-wrap items-center" key={`${direction}-${index}`}>
+											<Fragment key={index}>
 												{
 													group.map((skill: string, index: number ) => (
 														<Chip
@@ -66,7 +67,7 @@ export default async function Skills({
 														className="h-full w-[1px] bg-gray-100"
 													/>
 												)}
-											</div>
+											</Fragment>
 										))
 									}
 								</div>

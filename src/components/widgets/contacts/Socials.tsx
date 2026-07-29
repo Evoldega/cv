@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const socials = [
     {
-        image: "inst.svg",
+        image: "inst.png",
         title: "Instagram",
         content: "evoldega",
         href: "https://www.instagram.com/"
@@ -28,8 +28,9 @@ export default async function Socials({ className, ...props }: ISocials) {
                     <Contact
                         key={index}
                         customImage={
-                            <div className="flex justify-center items-center rounded-[50%] w-[34px] h-[34px]">
+                            <div className="flex justify-center items-center w-[34px] h-[34px]">
                                 <Image
+                                    className="rounded-[50%]"
                                     src={`/${soc.image}`}
                                     width={34}
                                     height={34}

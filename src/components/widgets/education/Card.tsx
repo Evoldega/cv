@@ -17,7 +17,7 @@ export default async function Card({
     date
 }: ICard) {
   return (
-    <div className="flex flex-col gap-[8px] w-fit py-[24px] px-[16px] bg-gray-100 rounded-[6px]">
+    <div className="flex flex-col gap-[8px] w-fit py-[24px] px-[16px] bg-gray-100 rounded-[6px] shadow-md">
         <div className="flex flex-wrap gap-[24px] justify-between">
             <div>
                 <Image

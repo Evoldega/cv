@@ -20,7 +20,7 @@ export default async function Contact({
     customImage
 }: IContact) {  
   return (
-    <div className="flex w-fit gap-[8px]">
+    <div className="flex w-fit gap-[8px] flex-shrink-0">
         {
             customImage ??
             <div className="flex justify-center items-center bg-gray-100 rounded-[50%] w-[34px] h-[34px]">

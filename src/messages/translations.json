@@ -167,6 +167,30 @@
         "ru": "Социальные сети",
         "en": "Socials"
     },
+    "LastProjects.title": {
+        "ru": "Последние проекты",
+        "en": "Last projects"
+    },
+    "LastProjects.atomcode": {
+        "ru": "Атомкод",
+        "en": "Atomcode"
+    },
+    "LastProjects.atomcode_desc": {
+        "ru": "Low-code платформа «Росатома» с поддержкой ИИ для быстрой разработки корпоративных приложений",
+        "en": "Rosatom's AI-powered low-code platform for rapid development of enterprise-grade applications"
+    },
+    "LastProjects.dt": {
+        "ru": "Система \"Цифровой двойник изделия\" (АЭМ)",
+        "en": "Digital Twin Platform for Rosatom"
+    },
+    "LastProjects.dt_desc": {
+        "ru": "Внутренняя платформа «Росатома» для создания цифровых двойников, обеспечивающая управление жизненным циклом предприятия, интеграцию инженерных данных и оптимизацию процессов.",
+        "en": "Rosatom's internal digital twin platform for enterprise lifecycle management, engineering data integration, and process optimization"
+    },
+    "LastProjects.dt_link": {
+        "ru": "(статья о проекте)",
+        "en": "(about project article)"
+    },
     "Common.frontend": {
         "ru": "Frontend Разработчик",
         "en": "Frontend Developer"
@@ -182,5 +206,13 @@
     "Common.russia": {
         "ru": "Россия",
         "en": "Russia"
+    },
+    "Common.change_lang": {
+        "ru": "Переключить язык",
+        "en": "Change language"
+    },
+    "Common.download_cv": {
+        "ru": "Скачать резюме",
+        "en": "Download CV"
     }
 }
