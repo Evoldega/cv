@@ -24,7 +24,7 @@ export default async function Hero() {
             <div className="flex justify-between">
               <Text variant="h1">{t("Hero.fullName")}</Text>
               <div className="flex gap-[8px]">
-                <DownloadCV />
+                {/* <DownloadCV /> */}
                 <LanguageSwitcher />
               </div>
             </div>
