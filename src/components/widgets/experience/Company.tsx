@@ -33,22 +33,24 @@ export default function Company({
   return (
     <section className="flex">
         <Liner size="m" expanded={true} />
-        <div className="w-full">
-            <section className="flex flex-row items-between justify-between">
-                <Contact
-                    customImage={
-                        <Image
-                            className="rounded-[50%]"
-                            src={`/${image.name}.${image.ext}`}
-                            width={34}
-                            height={1}
-                            alt={image.name}
-                        />
-                    }
-                    title={role}
-                    content={company}
-                />
-                <div className="flex flex-col justify-between items-end">
+        <div className="grow">
+            <section className="flex flex-row flex-wrap max-xs:gap-[8px] items-between justify-between">
+                <div className="flex-shrink-0">
+                    <Contact
+                        customImage={
+                            <Image
+                                className="rounded-[50%]"
+                                src={`/${image.name}.${image.ext}`}
+                                width={34}
+                                height={1}
+                                alt={image.name}
+                            />
+                        }
+                        title={role}
+                        content={company}
+                    />                    
+                </div>
+                <div className="flex flex-col justify-between xs:items-end items-start">
                     <Text variant="cap1">{date}</Text>
                     <div className="flex flex-row">
                         <Image
@@ -62,7 +64,7 @@ export default function Company({
                     </div>
                 </div>
             </section>
-            <section className="w-full mt-[24px]">
+            <section className="grow mt-[24px]">
                 {
                     description.map((desc, index) => (
                         <div key={index} className="flex flex-row items-start mb-[4px]">

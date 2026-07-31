@@ -18,7 +18,9 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /var/www/cv
-            git pull
+            git config --global --add safe.directory /var/www/cv
+            git fetch origin
+            git reset --hard origin/master
             /root/.bun/bin/bun install
             /root/.bun/bin/bun run build
             sudo systemctl restart cv
