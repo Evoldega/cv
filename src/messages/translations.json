@@ -171,29 +171,41 @@
         "ru": "Последние проекты",
         "en": "Last projects"
     },
-    "LastProjects.atomcode": {
-        "ru": "Атомкод",
-        "en": "Atomcode"
-    },
-    "LastProjects.atomcode_desc": {
-        "ru": "Low-code платформа «Росатома» с поддержкой ИИ для быстрой разработки корпоративных приложений",
-        "en": "Rosatom's AI-powered low-code platform for rapid development of enterprise-grade applications"
-    },
-    "LastProjects.dt": {
-        "ru": "Система \"Цифровой двойник изделия\" (АЭМ)",
-        "en": "Digital Twin Platform for Rosatom"
-    },
-    "LastProjects.dt_desc": {
-        "ru": "Внутренняя платформа «Росатома» для создания цифровых двойников, обеспечивающая управление жизненным циклом предприятия, интеграцию инженерных данных и оптимизацию процессов.",
-        "en": "Rosatom's internal digital twin platform for enterprise lifecycle management, engineering data integration, and process optimization"
-    },
-    "LastProjects.dt_link": {
-        "ru": "(статья о проекте)",
-        "en": "(about project article)"
-    },
     "LastProjects.show_all": {
         "ru": "Показать все проекты",
         "en": "Show all projects"
+    },
+    "Projects.atomcode": {
+        "ru": "Атомкод",
+        "en": "Atomcode"
+    },
+    "Projects.atomcode_desc": {
+        "ru": "Low-code платформа «Росатома» с поддержкой ИИ для быстрой разработки корпоративных приложений",
+        "en": "Rosatom's AI-powered low-code platform for rapid development of enterprise-grade applications"
+    },
+    "Projects.dt": {
+        "ru": "Система \"Цифровой двойник изделия\" (АЭМ)",
+        "en": "Digital Twin Platform for Rosatom"
+    },
+    "Projects.dt_desc": {
+        "ru": "Внутренняя платформа «Росатома» для создания цифровых двойников, обеспечивающая управление жизненным циклом предприятия, интеграцию инженерных данных и оптимизацию процессов.",
+        "en": "Rosatom's internal digital twin platform for enterprise lifecycle management, engineering data integration, and process optimization"
+    },
+    "Projects.dt_link": {
+        "ru": "(статья о проекте)",
+        "en": "(about project article)"
+    },
+    "Projects.kit": {
+        "ru": "Ui-kit для low-code платформы «Росатома»",
+        "en": "Ui-kit for low-code platform of Rosatom"
+    },
+    "Projects.kit_desc": {
+        "ru": "Корпоративная UI-библиотека для low-code платформы с поддержкой PWA, биометрической аутентификации и интеграцией с нативными устройствами",
+        "en": "Enterprise UI component library for a low-code platform with PWA support, biometric authentication, and native device integrations"
+    },
+    "Projects.kit_link": {
+        "ru": "Описание из документации",
+        "en": "Description from the documentation"
     },
     "Projects.title": {
         "ru": "Проекты",

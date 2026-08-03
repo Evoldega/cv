@@ -6,7 +6,7 @@ import { projects } from "@/data/projects";
 
 
 export default async function Projects() {
-    const t = await getTranslations("LastProjects");
+    const t = await getTranslations("Projects");
 
     return (
         <div className="flex flex-wrap gap-[32px] px-[24px]">
