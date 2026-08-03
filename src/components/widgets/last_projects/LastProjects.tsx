@@ -1,12 +1,14 @@
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
+import Project from "@/components/widgets/last_projects/Project";
+import ArrowIcon from "@/assets/arrow_bar_right.svg"
 
 import { getTranslations } from 'next-intl/server';
-import Project from "@/components/widgets/last_projects/Project";
 
 export default async function LastProjects({
     expanded = false
 }: { expanded?: boolean }) {
+
     const t = await getTranslations();
   
     const projects = [
@@ -55,6 +57,7 @@ export default async function LastProjects({
                                 />
                             ))
                         }
+                        <ArrowIcon className="gray-100" />
                     </div>
                 }
             />
