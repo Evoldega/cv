@@ -37,7 +37,7 @@ export default async function Contact({
             <Text variant="btn">{
                 href ?
                 <Link 
-                    className="hover:text-violet-400 animate-in fade-in duration-200"
+                    className="hover:text-indigo-400 animate-in fade-in duration-200"
                     target="_blank"
                     href={href === content ? content : href + content}
                 >

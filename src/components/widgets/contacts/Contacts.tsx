@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import Contact from "@/components/common/Contact";
+import Contact from "@/components/common/contact";
 
 interface IContacts {
     className?: string;

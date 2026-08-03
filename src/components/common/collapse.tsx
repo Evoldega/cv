@@ -32,7 +32,7 @@ export default function Collapse({
             <div className="flex flex-row w-full">
                 <Liner expanded={isOpen} className={animation} />
                 <div className="flex flex-col items-start w-full">
-                    <CollapsibleTrigger className={`${fadeIn} flex justify-start w-full cursor-pointer hover:text-violet-400 ${isOpen ? "text-violet-500" : ""} sticky top-0 z-10 bg-white`}>{ title }</CollapsibleTrigger>
+                    <CollapsibleTrigger className={`${fadeIn} flex justify-start w-full cursor-pointer hover:text-indigo-400 ${isOpen ? "text-indigo-500" : ""} sticky top-0 z-10 bg-white`}>{ title }</CollapsibleTrigger>
                     <CollapsibleContent className={`${animation} w-full`}>
                         { content }
                     </CollapsibleContent>

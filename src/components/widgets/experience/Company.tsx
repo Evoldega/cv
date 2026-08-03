@@ -1,5 +1,5 @@
-import Contact from "@/components/common/Contact";
-import HighlightText from "@/components/common/highlightText";
+import Contact from "@/components/common/contact";
+import HighlightText from "@/components/common/highlight-text";
 import Liner from "@/components/ui/liner";
 import Text from "@/components/ui/text";
 import Image from "next/image";

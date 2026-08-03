@@ -44,7 +44,7 @@ export default async function Projects({
                     </div>
                     <Text variant="btn">
                         <Link 
-                            className="hover:text-violet-400 text-violet-500 animate-in fade-in duration-200"
+                            className="hover:text-indigo-400 text-indigo-500 animate-in fade-in duration-200"
                             target="_blank"
                             href={link.href}
                         >
