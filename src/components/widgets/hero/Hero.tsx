@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Text from "@/components/ui/text";
 import { getTranslations } from 'next-intl/server';
-import { LanguageSwitcher } from "@/components/common/languageSwitcher";
-import Contacts from "../contacts/Contacts";
-import { DownloadCV } from "@/components/common/downloadCV";
+import { LanguageSwitcher } from "@/components/common/language-switcher";
+import Contacts from "@/components/widgets/contacts/Contacts";
 
 export default async function Hero() {
   const t = await getTranslations();
@@ -28,7 +27,7 @@ export default async function Hero() {
                 <LanguageSwitcher />
               </div>
             </div>
-            <Text className="text-violet-500" variant="h2">{t("Common.frontend")}</Text>            
+            <Text className="text-indigo-500" variant="h2">{t("Common.frontend")}</Text>            
           </div>
           <Contacts className="flex flex-col flex-wrap gap-[24px] max-w-[640px]" />
         </div>

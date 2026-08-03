@@ -191,6 +191,14 @@
         "ru": "(статья о проекте)",
         "en": "(about project article)"
     },
+    "LastProjects.show_all": {
+        "ru": "Показать все проекты",
+        "en": "Show all projects"
+    },
+    "Projects.title": {
+        "ru": "Проекты",
+        "en": "Projects"
+    },
     "Common.frontend": {
         "ru": "Frontend Разработчик",
         "en": "Frontend Developer"
@@ -214,5 +222,9 @@
     "Common.download_cv": {
         "ru": "Скачать резюме",
         "en": "Download CV"
+    },
+    "Common.back": {
+        "ru": "Назад",
+        "en": "Back"
     }
 }

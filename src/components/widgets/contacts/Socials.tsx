@@ -1,4 +1,4 @@
-import Contact from "@/components/common/Contact";
+import Contact from "@/components/common/contact";
 import Image from "next/image";
 
 const socials = [

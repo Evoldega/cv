@@ -12,7 +12,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{locale: string}>;
 }) {
-  const {locale} = await params;
+  const { locale } = await params;
 
 
   if (!routing.locales.includes(locale as any)) {

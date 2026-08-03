@@ -29,20 +29,12 @@ export const viewport = {
 
 
 export default function RootLayout(
-  { children }: 
-  { 
-    children: React.ReactNode;
-  }
+  { children }: { children: React.ReactNode }
 ) {
 
   return (
-    <html className={
-      cn(
-        "h-full",
-        "antialiased",
-      )
-    }>
-      <body className="h-full flex flex-col items-center px-[24px]">
+    <html>
+      <body className="min-h-screen flex flex-col items-center">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>
