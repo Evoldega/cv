@@ -16,15 +16,14 @@ export default function SeeAllProjectsButton() {
                 items-center
                 gap-[4px]
                 h-fit
-                text-gray-300
-                hover:text-indigo-400
+                text-indigo-500
+                hover:text-indigo-700
+                hover:underline
                 transition-all
                 duration-300
                 cursor-pointer
             "
-            onClick={(e) => {
-                e.stopPropagation()
-            }}
+            onClick={(e) => e.stopPropagation()}
         >
             <ArrowIcon
                 className="text-inherit"

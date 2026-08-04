@@ -1,5 +1,8 @@
+import type { Metadata } from "next";
+
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
+import { getTranslations } from 'next-intl/server';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -16,4 +19,14 @@ export function getDescription(count: number, t: any, keyPrefix: string = "Exper
     }
 
     return description
+}
+
+
+export async function getMetadata(titleKey: string, description: string): Promise<Metadata> {
+  const t = await getTranslations();
+
+  return {
+    title: t(titleKey),
+    description: description,
+  };
 }

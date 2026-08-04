@@ -17,47 +17,92 @@ interface IBreadcrumbs {
     }[];
 }
 
+const truncateText = (
+    text: string,
+    maxLength: number
+) => {
+    if (text.length <= maxLength) {
+        return text;
+    }
+
+    return `${text.slice(0, maxLength - 3)}...`;
+};
+
 export default function Breadcrumbs(
     { list }: IBreadcrumbs
 ) {
 
+    const getBreadcrumbName = (name: string, index: number) => {
+        const isProtected =
+            index === 0 || // Первая
+            index === list.length - 2 || // Предпоследняя
+            index === list.length - 1; // Последняя
+
+        //Не режем меньше чем 32 символа
+        if (isProtected) {
+            return truncateText(name, 32);
+        }
+
+        // Остальные крошки можно резать сильнее
+
+        return truncateText(name, 16);
+    };
+
   return (
-    <Breadcrumb>
-        <BreadcrumbList>
-            {
-                list.map((item, index) => (
-                    <Fragment key={index}>
-                        <BreadcrumbItem>
+        <Breadcrumb>
+            <BreadcrumbList className="flex-nowrap overflow-hidden">
+                {
+                    list.map((item, index) => (
+                        <Fragment key={index}>
+                            <BreadcrumbItem className="min-w-0">
+                                {
+                                    index !== list.length - 1 ? (
+                                        <BreadcrumbLink
+                                            href={item.href}
+                                            className="max-w-full"
+                                        >
+                                            <Text
+                                                variant="btn"
+                                                className="
+                                                    block
+                                                    max-w-full
+                                                    truncate
+                                                    text-indigo-600
+                                                    hover:text-indigo-400
+                                                    transition-all
+                                                    duration-300
+                                                    cursor-pointer
+                                                "
+                                            >
+                                                {getBreadcrumbName(item.name, index)}
+                                            </Text>
+                                        </BreadcrumbLink>
+                                    ) : (
+                                        <BreadcrumbPage>
+                                            <Text
+                                                variant="btn"
+                                                className="
+                                                    block
+                                                    max-w-full
+                                                    truncate
+                                                "
+                                            >
+                                                {getBreadcrumbName(item.name, index)}
+                                            </Text>
+                                        </BreadcrumbPage>
+                                    )
+                                }
+                            </BreadcrumbItem>
+
                             {
-                                item.href ? (
-                                    <BreadcrumbLink href={item.href}>
-                                        <Text
-                                            className="                
-                                                text-indigo-600
-                                                hover:text-indigo-400
-                                                transition-all
-                                                duration-300
-                                                cursor-pointer
-                                            "
-                                            variant="btn"
-                                        >{item.name}</Text>
-                                    </BreadcrumbLink>
-                                ) : (
-                                    <BreadcrumbPage>
-                                        <Text variant="btn">{item.name}</Text>
-                                    </BreadcrumbPage>
+                                index !== list.length - 1 && (
+                                    <BreadcrumbSeparator />
                                 )
                             }
-                        </BreadcrumbItem>
-                        {
-                            list.length - 1 !== index && (
-                                <BreadcrumbSeparator />
-                            )
-                        }
-                    </Fragment>
-                ))
-            }
-        </BreadcrumbList>
-    </Breadcrumb>
-  );
+                        </Fragment>
+                    ))
+                }
+            </BreadcrumbList>
+        </Breadcrumb>
+    );
 }
