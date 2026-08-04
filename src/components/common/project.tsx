@@ -6,7 +6,7 @@ interface IProject {
     image: string;
     title: string;
     desc: string;
-    link: {
+    link?: {
         name: string;
         href: string;
     };
@@ -33,25 +33,30 @@ export default async function Projects({
                     <Text variant="sub1">{title}</Text>
                     <Text variant="p" className="text-gray-600">{desc}</Text>                
                 </div>
-                <div className="flex items-center gap-[8px]">
-                    <div className="flex justify-center items-center bg-gray-100 rounded-[50%] w-[34px] h-[34px]">
-                        <Image
-                            src={`/link.svg`}
-                            width={22}
-                            height={22}
-                            alt={image ?? ""}
-                        />
+                {
+                    link && (
+                    <div className="flex items-center gap-[8px]">
+                        <div className="flex justify-center items-center bg-gray-100 rounded-[50%] w-[34px] h-[34px]">
+                            <Image
+                                src={`/link.svg`}
+                                width={22}
+                                height={22}
+                                alt={image ?? ""}
+                            />
+                        </div>
+                        <Text variant="btn">
+                            <Link 
+                                className="hover:text-indigo-400 text-indigo-500 animate-in fade-in duration-200"
+                                target="_blank"
+                                href={link.href}
+                            >
+                                {link.name}
+                            </Link>                    
+                        </Text>
                     </div>
-                    <Text variant="btn">
-                        <Link 
-                            className="hover:text-indigo-400 text-indigo-500 animate-in fade-in duration-200"
-                            target="_blank"
-                            href={link.href}
-                        >
-                            {link.name}
-                        </Link>                    
-                    </Text>
-                </div>
+                    )
+                }
+
             </div>
 
         </div>
