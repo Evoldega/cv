@@ -26,8 +26,6 @@ function nestMessages(locale: Locale) {
 export default getRequestConfig(async ({requestLocale}) => {
   const locale = await requestLocale;
 
-  console.log('REQUEST LOCALE:', locale);
-
   const currentLocale = routing.locales.includes(locale as Locale)
     ? (locale as Locale)
     : routing.defaultLocale;
