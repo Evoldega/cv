@@ -36,6 +36,7 @@ export default async function ProjectsLayout(
     return (
         <section className="flex flex-col w-full">
             <MenuBar
+                sticky
                 title={t("Projects.title")}
                 breadcrumbs={breadcrumbsList} 
             />
