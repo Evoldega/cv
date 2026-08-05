@@ -8,7 +8,9 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+
 import Text from "@/components/ui/text";
+import { Tooltip } from "@/components/common/tooltip";
 
 interface IBreadcrumbs {
     list: {
@@ -25,7 +27,9 @@ const truncateText = (
         return text;
     }
 
-    return `${text.slice(0, maxLength - 3)}...`;
+    return <Tooltip align="end" title={text}>
+        {text.slice(0, maxLength - 3)}...
+    </Tooltip>;
 };
 
 export default function Breadcrumbs(

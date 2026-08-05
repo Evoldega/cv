@@ -13,11 +13,12 @@ import Liner from "@/components/ui/liner";
 interface ICollapse {
     title: React.ReactNode;
     content: React.ReactNode;
+    lineSize?: "m" | "l"
     expanded?: boolean;
 }
 
 export default function Collapse({ 
-    title, content, expanded = false
+    title, content, expanded = false, lineSize = "l"
 }: ICollapse): React.ReactElement {
 
     const [isOpen, setIsOpen] = useState(expanded);
@@ -30,7 +31,7 @@ export default function Collapse({
     return (
         <Collapsible className="w-full" open={isOpen} onOpenChange={setIsOpen}>
             <div className="flex flex-row w-full">
-                <Liner expanded={isOpen} className={animation} />
+                { isOpen && <Liner size={lineSize} expanded={isOpen} className={animation} /> }
                 <div className="flex flex-col items-start w-full">
                     <CollapsibleTrigger className={`${fadeIn} flex justify-start w-full cursor-pointer ${isOpen ? "text-indigo-500 hover:text-indigo-300" : "hover:text-indigo-700"}`}>{ title }</CollapsibleTrigger>
                     <CollapsibleContent className={`${animation} w-full`}>

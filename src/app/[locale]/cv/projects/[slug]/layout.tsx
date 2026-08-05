@@ -25,7 +25,6 @@ export default async function SlugLayout(
 ) {
     const t = await getTranslations();
         
-
     return (
         <>
             {children}
