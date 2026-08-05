@@ -33,9 +33,9 @@ export default async function LastProjects({
                             return(
                                 <Project
                                     key={index}
-                                    image={project.image}
+                                    image={project.cover}
                                     title={t(`Projects.${project.title}`)}
-                                    desc={t(`Projects.${project.desc}`)}
+                                    desc={t(`Projects.${project.description}`)}
                                     link={{
                                         name: project.link.name !== project.link.href ? t(`Projects.${project.link.name}`) : project.link.name,
                                         href: project.link.href

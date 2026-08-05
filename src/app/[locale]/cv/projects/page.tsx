@@ -26,9 +26,9 @@ export default async function Projects() {
                     "
                 >
                     <Project
-                        image={project.image}
+                        image={project.cover}
                         title={t(project.title)}
-                        desc={t(project.desc)}
+                        desc={t(project.description)}
                     />
                 </Link>
             ))}
