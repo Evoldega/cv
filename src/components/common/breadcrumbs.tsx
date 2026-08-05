@@ -42,17 +42,16 @@ export default function Breadcrumbs(
             index === list.length - 2 || // Предпоследняя
             index === list.length - 1; // Последняя
 
-        //Не режем меньше чем 32 символа
+        // Не режем меньше чем 32 символа
         if (isProtected) {
             return truncateText(name, 32);
         }
 
         // Остальные крошки можно резать сильнее
-
         return truncateText(name, 16);
     };
 
-  return (
+    return (
         <Breadcrumb>
             <BreadcrumbList className="flex-nowrap overflow-hidden">
                 {

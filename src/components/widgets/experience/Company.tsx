@@ -71,33 +71,31 @@ export default function Company({
                     </section>
                 }
                 content={
-                    <>
-                        <section className="grow mt-[24px]">
-                            {
-                                description.map((desc, index) => (
-                                    <div key={index} className="flex flex-row items-start mb-[4px]">
-                                        <div className="flex-shrink-0 flex justify-center w-[24px] h-[20px]">
-                                            <Image
-                                                className="stroke-gray-200"
-                                                src="/gray_dot.svg"
-                                                width={3}
-                                                height={3}
-                                                alt="dot"
-                                            />                                
-                                        </div>
-                                        <HighlightText 
-                                            key={index}
-                                            text={desc.text}
-                                            boldWords={desc.boldWords}
-                                        />
+                    <section className="grow mt-[24px]">
+                        {
+                            description.map((desc, index) => (
+                                <div key={index} className="flex flex-row items-start mb-[4px]">
+                                    <div className="flex-shrink-0 flex justify-center w-[24px] h-[20px]">
+                                        <Image
+                                            className="stroke-gray-200"
+                                            src="/gray_dot.svg"
+                                            width={3}
+                                            height={3}
+                                            alt="dot"
+                                        />                                
                                     </div>
-                                ))
-                            }
-                            <div className="my-[24px]">
-                                <Text variant="btn">{stack}</Text>
-                            </div>
-                        </section>
-                    </>
+                                    <HighlightText 
+                                        key={index}
+                                        text={desc.text}
+                                        boldWords={desc.boldWords}
+                                    />
+                                </div>
+                            ))
+                        }
+                        <div className="my-[24px]">
+                            <Text variant="btn">{stack}</Text>
+                        </div>
+                    </section>
                 }
             />
         </div>
