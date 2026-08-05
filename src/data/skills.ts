@@ -4,7 +4,7 @@ export const skills: any = {
 		["React", "Next", "MUI", "Redux", "MobX", "Zustand", "GraphQL"],
 		["Bun", "Webpack", "Vite"],
 		["WebSocket", "PWA", "FSD"],
-		["D3.js", "i18n", "C3D Toolkit"]
+		["bpmn.js", "i18n", "C3D Toolkit"]
 	],
 	backend: [
 		["Node.js", "Nest.js"],

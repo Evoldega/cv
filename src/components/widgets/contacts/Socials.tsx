@@ -1,19 +1,6 @@
 import Contact from "@/components/common/contact";
 import Image from "next/image";
-
-const socials = [
-    {
-        image: "inst.png",
-        title: "Instagram",
-        content: "evoldega",
-        href: "https://www.instagram.com/"
-    }, {
-        image: "linkedin.png",
-        title: "Linkedin",
-        content: "dmitriy-lukyanov-a97015107",
-        href: "https://www.linkedin.com/in/"
-    }
-]
+import { socials } from "@/data/socials";
 
 interface ISocials {
     className: string;

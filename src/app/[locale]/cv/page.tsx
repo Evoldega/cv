@@ -14,9 +14,9 @@ export default function CV() {
           <Hero />
           <div className="flex flex-col grow py-[64px]">
             <LastProjects expanded/>
-            <Experience expanded />
-            <Skills expanded />
-            <Education expanded />
+            <Experience />
+            <Skills />
+            <Education />
           </div>
           <footer className="relative">
             <div className="
