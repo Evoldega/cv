@@ -34,7 +34,7 @@ export default async function Contact({
         }
         <div className="flex flex-col justify-between">
             <Text variant="cap1">{title}</Text>
-            <Text variant="btn">{
+            <Text variant="btn" className="flex">{
                 href ?
                 <Link 
                     className="hover:text-indigo-400 animate-in fade-in duration-200"

@@ -1,32 +1,14 @@
 import { Fragment } from "react";
+
+import { skills } from "@/data/skills"
+
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
-import { Separator } from "@/components/ui/separator";
 import Chip from "@/components/ui/chip";
 
-import { getTranslations } from 'next-intl/server';
+import { Separator } from "@/components/ui/separator";
 
-const skills: any = {
-	frontend: [
-		["HTML", "CSS", "SCSS", "JS", "TS"],
-		["React", "Next", "MUI", "Redux", "MobX", "Zustand", "GraphQL"],
-		["Bun", "Webpack", "Vite"],
-		["WebSocket", "PWA", "FSD"],
-		["D3.js", "i18n", "C3D Toolkit"]
-	],
-	backend: [
-		["Node.js", "Nest.js"],
-		["MongoDB", "PostgreSQL"],
-		["Grafana", "Prisma", "Swagger", "Telegraf"],
-		["REST API"]
-	],
-	other: [
-		["Git", "Jenkins", "Docker"],
-		["Linux", "Bash"],
-		["Figma", "Jira"],
-		["Scrum", "Lean"]
-	]
-};
+import { getTranslations } from 'next-intl/server';
 
 export default async function Skills({
     expanded = false
@@ -54,7 +36,7 @@ export default async function Skills({
 													group.map((skill: string, index: number ) => (
 														<Chip
 															key={index}
-															className={`bg-[linear-gradient(90deg,rgba(164,120,232,1)_0%,rgba(81,108,247,1)_100%)] mr-[8px]`}
+															className={`bg-[linear-gradient(90deg,rgba(164,120,232,1)_0%,rgba(81,108,247,1)_100%)]`}
 														>
 															<Text variant="cap2" className="text-white">{skill}</Text>
 														</Chip>
@@ -62,10 +44,10 @@ export default async function Skills({
 												}
 
 												{index !== skills[direction].length - 1 && (
-													<Separator
-														orientation="vertical"
-														className="h-full w-[1px] bg-gray-100"
-													/>
+														<Separator
+															orientation="vertical"
+															className=" w-[1px] bg-indigo-100"
+														/>
 												)}
 											</Fragment>
 										))
