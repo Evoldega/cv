@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Roboto, Outfit } from "next/font/google";
 import { TooltipProvider } from "@/components/ui/tooltip"
+import ServiceWorkerRegister from "@/components/providers/ServiceWorkerRegister";
 
 import "./globals.css";
 import "@fontsource/outfit";
 import "@fontsource/roboto";
-import { cn } from "@/lib/utils";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -19,7 +19,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "CV",
-  description: "Dmitry Lukyanov CV"
+  description: "Dmitry Lukyanov CV",
+  manifest: "/manifest.webmanifest"
 };
 
 export const viewport = {
@@ -29,20 +30,13 @@ export const viewport = {
 
 
 export default function RootLayout(
-  { children }: 
-  { 
-    children: React.ReactNode;
-  }
+  { children }: { children: React.ReactNode }
 ) {
 
   return (
-    <html className={
-      cn(
-        "h-full",
-        "antialiased",
-      )
-    }>
-      <body className="h-full flex flex-col items-center px-[24px]">
+    <html>
+      <body className="min-h-screen flex flex-col items-center">
+        <ServiceWorkerRegister />
         <TooltipProvider>{children}</TooltipProvider>
       </body>
     </html>

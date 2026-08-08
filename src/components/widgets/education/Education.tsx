@@ -2,28 +2,14 @@ import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
 import Card from "@/components/widgets/education/Card";
 
+import { education as edus } from "@/data/education"
+
 import { getTranslations } from 'next-intl/server';
 
 export default async function Education({
     expanded = false
 }: { expanded?: boolean }) {
-    const t = await getTranslations();
-  
-    const edus = [
-        {
-            image: "training_center",
-            ext: "jpeg",
-            institution: t("Education.inst_name_1"),
-            course: t("Education.course_1"),
-            date: t("Education.date_1")
-        }, {
-            image: "training_center",
-            ext: "jpeg",
-            institution: t("Education.inst_name_1"),
-            course: t("Education.course_2"),
-            date: t("Education.date_2")
-        },
-    ];
+    const t = await getTranslations("Education");
 
     return (
         <section className="flex flex-row">
@@ -31,7 +17,7 @@ export default async function Education({
                 expanded={expanded}
                 title={
                     <Text variant="h2" className="mb-[32px]">
-                        {t("Education.title")}
+                        {t("title")}
                     </Text>
                 }
                 content={
@@ -42,9 +28,9 @@ export default async function Education({
                                     key={index}
                                     image={edu.image}
                                     ext={edu.ext}
-                                    institution={edu.institution}
-                                    course={edu.course}
-                                    date={edu.date}
+                                    institution={t(edu.institution)}
+                                    course={t(edu.course)}
+                                    date={t(edu.date)}
                                 />
                             ))
                         }

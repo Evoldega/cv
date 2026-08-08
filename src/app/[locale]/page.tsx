@@ -1,9 +1,7 @@
-import CV from "./cv/page";
+import CV from "@/app/[locale]/cv/page";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-full">
-      <CV />
-    </div>
+    <CV />
   );
 }

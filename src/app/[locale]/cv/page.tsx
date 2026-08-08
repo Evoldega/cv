@@ -9,14 +9,14 @@ import Skills from "@/components/widgets/skills/Skills";
 
 export default function CV() {
   return (
-    <section className="flex flex-col  items-center justify-center pt-[24px] max-w-[1420px] w-full h-full">
-        <div className="flex flex-col w-full h-full">
+    <section className="flex flex-col items-center justify-center pt-[24px] px-[24px] max-w-[1444px] min-h-screen w-full">
+        <div className="flex flex-col grow w-full">
           <Hero />
-          <div className="py-[64px] grow">
+          <div className="flex flex-col grow py-[64px]">
             <LastProjects expanded/>
-            <Experience expanded />
-            <Skills expanded />
-            <Education expanded />
+            <Experience />
+            <Skills />
+            <Education />
           </div>
           <footer className="relative">
             <div className="

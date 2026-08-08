@@ -22,5 +22,6 @@ jobs:
             git fetch origin
             git reset --hard origin/master
             /root/.bun/bin/bun install
+            rm -rf .next
             /root/.bun/bin/bun run build
             sudo systemctl restart cv

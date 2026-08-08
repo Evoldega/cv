@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import Contact from "@/components/common/Contact";
+import Contact from "@/components/common/contact";
 
 interface IContacts {
     className?: string;
@@ -15,7 +15,7 @@ export default async function Contacts({ className, ...props }: IContacts) {
             image: "mail",
             ext: "svg",
             title: t("Contacts.mail"),
-            content: "gwinp@yandex.ru",
+            content: "evoldega@icloud.com",
             href: "mailto:"
         }, {
             image: "link",
@@ -27,7 +27,7 @@ export default async function Contacts({ className, ...props }: IContacts) {
             image: "phone",
             ext: "svg",
             title: t("Contacts.phone"),
-            content: "+7 (977) 399-01-05",
+            content: "+7 (926) 301-44-97",
             href: "tel:"
         }, {
             image: "location",
