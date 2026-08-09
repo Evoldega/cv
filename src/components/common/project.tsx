@@ -1,6 +1,7 @@
 import Text from "@/components/ui/text";
 import Image from "next/image";
 import Link from 'next/link'
+import { Spinner } from "@/components/ui/spinner"
 
 interface IProject {
     image: string;
