@@ -191,9 +191,13 @@
         "ru": "Внутренняя платформа «Росатома» для создания цифровых двойников, обеспечивающая управление жизненным циклом предприятия, интеграцию инженерных данных и оптимизацию процессов.",
         "en": "Rosatom's internal digital twin platform for enterprise lifecycle management, engineering data integration, and process optimization"
     },
-    "Projects.dt_link": {
-        "ru": "(статья о проекте)",
-        "en": "(about project article)"
+    "Projects.article": {
+        "ru": "Cтатья о проекте",
+        "en": "About project article"
+    },
+    "Projects.doc": {
+        "ru": "Описание из документации",
+        "en": "Description from the documentation"
     },
     "Projects.kit": {
         "ru": "Ui-kit для low-code платформы «Росатома»",
@@ -203,9 +207,21 @@
         "ru": "Корпоративная UI-библиотека для low-code платформы с поддержкой PWA, биометрической аутентификации и интеграцией с нативными устройствами",
         "en": "Enterprise UI component library for a low-code platform with PWA support, biometric authentication, and native device integrations"
     },
-    "Projects.kit_link": {
-        "ru": "Описание из документации",
-        "en": "Description from the documentation"
+    "Projects.bim": {
+        "ru": "Корпоративная ЦИМ-платформа",
+        "en": "Enterprise BIM Platform"
+    },
+    "Projects.bim_desc": {
+        "ru": "ЦИМ-платформа для автоматизированной проверки и сравнения версий моделей, заменяющая зарубежные решения и обеспечивающая совместимость на основе открытого формата IFC.",
+        "en": "BIM platform for automated model validation, clash detection, version comparison, and IFC-based interoperability."
+    },
+    "Projects.bpmn": {
+        "ru": "Управление и администрирование BPM-процессов",
+        "en": "BPM Process Management & Administration"
+    },
+    "Projects.bpmn_desc": {
+        "ru": "Корпоративный интерфейс для управления и мониторинга бизнес-процессов, рабочих процессов и связанных с ними данных.",
+        "en": "Enterprise interface for managing and monitoring business processes, workflows, and related process data."
     },
     "Projects.title": {
         "ru": "Проекты",

@@ -9,7 +9,7 @@ interface IProject {
     period?: string;
 
     technologies?: string[][][];
-    responsibilities?: string[]; // Что было сделано мной
+    responsibilities?: string[];
 
     architecture?: string;
 
@@ -78,7 +78,7 @@ export const projects: IProject[] = [
         ],
         architecture: "",
         link: {
-            name: "dt_link",
+            name: "article",
             href: "https://itrussia.media/ru/article/tsifrovoy-dvoynik-ot-rosatoma-revolyutsiya-v-atomnom-mashino"
         },
         links: {
@@ -99,13 +99,55 @@ export const projects: IProject[] = [
         ],
         architecture: "",
         link: {
-            name: "kit_link",
+            name: "doc",
             href: "https://docs-atomkod-ru.translate.goog/Справочник-компонентов-экранных-форм/?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=ru&_x_tr_pto=wapp&_x_tr_hist=true"
         },
         links: {
             article: "",
             figma: "",
             docs: "",
+        }
+    },
+    {
+        cover: "bim_sshot.png",
+        title: "bim",
+        description: "bim_desc",
+        technologies: [
+            []
+        ],
+        responsibilities: [
+            ""
+        ],
+        architecture: "",
+        link: {
+            name: "article",
+            href: "https://c3dlabs.ru/blog/customer-stories/primenenie-c3d-web-vision-kompaniey-tsifrum-v-produkte-na-baze-platformy-atomkod/"
+        },
+        links: {
+            article: "https://c3dlabs.ru/blog/customer-stories/primenenie-c3d-web-vision-kompaniey-tsifrum-v-produkte-na-baze-platformy-atomkod/",
+            figma: "https://www.figma.com/design/WY9y8AIoRFZdG9mdhSZdP9/BIM?node-id=33-90940&p=f&t=XTqDH7uuUs77SYpx-0",
+            docs: "",
+        }
+    },
+    {
+        cover: "bpmn_sshot.png",
+        title: "bpmn",
+        description: "bpmn_desc",
+        technologies: [
+            []
+        ],
+        responsibilities: [
+            ""
+        ],
+        architecture: "",
+        link: {
+            name: "doc",
+            href: "https://docs-atomkod-ru.translate.goog/Справочник-API/mdcamundaproxy/?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=ru&_x_tr_pto=wapp"
+        },
+        links: {
+            article: "",
+            figma: "https://www.figma.com/design/LcISvnXmErkt2evmx6996n/BPMS?node-id=1-133988&p=f&t=zXDxG0WBFG2MwOWK-0",
+            docs: "https://docs-atomkod-ru.translate.goog/Справочник-API/mdcamundaproxy/?_x_tr_sl=ru&_x_tr_tl=en&_x_tr_hl=ru&_x_tr_pto=wapp",
         }
     }
 ];
