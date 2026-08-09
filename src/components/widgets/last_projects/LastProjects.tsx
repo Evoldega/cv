@@ -22,7 +22,7 @@ export default async function LastProjects({
                         <Text variant="h2">
                             {t("LastProjects.title")}
                         </Text>
-                        <SeeAllProjectsButton />
+                        <SeeAllProjectsButton count={projects.length - 2}/>
                     </div>
                 }
                 content={
