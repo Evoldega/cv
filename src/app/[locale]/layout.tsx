@@ -1,8 +1,10 @@
-import {NextIntlClientProvider} from "next-intl";
-import {getMessages, setRequestLocale} from "next-intl/server";
-import {notFound} from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { PostHogProvider } from "@/components/providers/PostHogProvider";
 
-import {routing} from "@/i18n/routing";
+import { getMessages, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
+
+import { routing } from "@/i18n/routing";
 
 
 export default async function LocaleLayout({
@@ -25,7 +27,9 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider messages={messages}>
-      {children}
+      <PostHogProvider locale={locale}>
+        {children}
+      </PostHogProvider>
     </NextIntlClientProvider>
   );
 }
