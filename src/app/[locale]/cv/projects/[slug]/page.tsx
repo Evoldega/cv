@@ -97,10 +97,8 @@ export default async function Projects(
                 </div>
               )
             }
-        </div>        
+        </div>
       </section>
-
-
     </main>
   );
 }
