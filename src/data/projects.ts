@@ -92,10 +92,18 @@ export const projects: IProject[] = [
         title: "kit",
         description: "kit_desc",
         technologies: [
-            []
+            [
+                ["HTML", "CSS", "SCSS", "TS"],
+                ["React", "Virtualized", "MUI", "MobX"],
+                ["Webpack"],
+                ["i18n", "C3D Toolkit"]
+            ]
         ],
         responsibilities: [
-            ""
+            "3D-Viewer",
+            "Gantt",
+            "Calendar",
+            "Datagrid"
         ],
         architecture: "",
         link: {
@@ -116,7 +124,9 @@ export const projects: IProject[] = [
             []
         ],
         responsibilities: [
-            ""
+            "Collisions",
+            "Initial data",
+            "Color and transparency",
         ],
         architecture: "",
         link: {
