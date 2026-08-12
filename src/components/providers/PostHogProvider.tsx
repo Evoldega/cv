@@ -11,14 +11,27 @@ export function PostHogProvider({
   locale: string;
 }) {
   useEffect(() => {
-    posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY!, {
-      api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST,
-      capture_pageview: true,
-    });
+    const {
+      NEXT_PUBLIC_POSTHOG_KEY,
+      NEXT_PUBLIC_POSTHOG_HOST
+    } = process.env;
 
-    posthog.register({
-      locale,
-    });
+    if (
+      NEXT_PUBLIC_POSTHOG_KEY &&
+      NEXT_PUBLIC_POSTHOG_HOST
+    ) {
+      posthog.init(NEXT_PUBLIC_POSTHOG_KEY!, {
+        api_host: NEXT_PUBLIC_POSTHOG_HOST,
+        capture_pageview: true,
+      });
+
+      posthog.register({
+        locale,
+      });     
+    } else {
+      console.log("PostHog: environment variables are not declared.")
+    }
+
   }, [locale]);
 
   return children;

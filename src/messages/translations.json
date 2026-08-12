@@ -254,5 +254,17 @@
     "Common.back": {
         "ru": "Назад",
         "en": "Back"
+    },
+    "Common.docs": {
+        "ru": "Документация",
+        "en": "Documentation"
+    },
+    "Common.article": {
+        "ru": "Статья",
+        "en": "Article"
+    },
+    "Common.figma": {
+        "ru": "Figma",
+        "en": "Figma"
     }
 }

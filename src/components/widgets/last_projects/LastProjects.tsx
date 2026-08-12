@@ -1,6 +1,6 @@
 import Text from "@/components/ui/text";
 import Collapse from "@/components/common/collapse";
-import Project from "@/components/common/project";
+import ProjectCard from "@/components/common/project";
 import SeeAllProjectsButton from "@/components/widgets/last_projects/SeeAllProjectsButton";
 
 import { getTranslations } from 'next-intl/server';
@@ -31,7 +31,7 @@ export default async function LastProjects({
                             if (index > 1) return;
 
                             return(
-                                <Project
+                                <ProjectCard
                                     key={index}
                                     image={project.cover}
                                     title={t(`Projects.${project.title}`)}
