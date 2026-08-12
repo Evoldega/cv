@@ -74,6 +74,9 @@ export const projects: IProject[] = [
         cover: "dtwin_sshot.png",
         title: "dt",
         description: "dt_desc",
+        screenshots: [
+            "dtwin_sshot.png",
+        ],
         technologies: [
             []
         ],
@@ -95,6 +98,9 @@ export const projects: IProject[] = [
         cover: "kit_sshot.png",
         title: "kit",
         description: "kit_desc",
+        screenshots: [
+            "kit_sshot.png",
+        ],
         technologies: [
             [
                 ["HTML", "CSS", "SCSS", "TS"],
@@ -124,6 +130,9 @@ export const projects: IProject[] = [
         cover: "bim_sshot.png",
         title: "bim",
         description: "bim_desc",
+        screenshots: [
+            "bim_sshot.png",
+        ],
         technologies: [
             []
         ],
@@ -147,6 +156,9 @@ export const projects: IProject[] = [
         cover: "bpmn_sshot.png",
         title: "bpmn",
         description: "bpmn_desc",
+        screenshots: [
+            "bpmn_sshot.png",
+        ],
         technologies: [
             []
         ],
