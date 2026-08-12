@@ -32,7 +32,8 @@ export const projects: IProject[] = [
         description: "atomcode_desc",
         screenshots: [
             "atomcode_sshot.png",
-            "atomcode_1.png"
+            "atomcode_1.png",
+            "atomcode_2.png"
         ],
         technologies: [
             [
@@ -76,19 +77,39 @@ export const projects: IProject[] = [
         description: "dt_desc",
         screenshots: [
             "dtwin_sshot.png",
+            "dtwin_1.png",
+            "dtwin_2.png"
         ],
         technologies: [
-            []
+            [
+                ["HTML", "CSS", "SCSS", "JS", "TS"],
+                ["React", "MUI", "MobX", "GraphQL"],
+                ["Webpack"],
+                ["i18n"]
+            ],
+            [
+                ["Git", "Jenkins", "Docker"],
+                ["Linux", "Bash"],
+                ["Figma", "Jira"],
+                ["Scrum", "Lean"]
+            ]
         ],
-        responsibilities: [],
+        responsibilities: [
+            "Tree",
+            "3D Viewer",
+            "Attributes",
+            "Files",
+            "Controls displaying",
+            "Autorization"
+        ],
         architecture: "",
         link: {
             name: "article",
-            href: "https://itrussia.media/ru/article/tsifrovoy-dvoynik-ot-rosatoma-revolyutsiya-v-atomnom-mashino"
+            href: "https://itrussia-media.translate.goog/ru/article/tsifrovoy-dvoynik-ot-rosatoma-revolyutsiya-v-atomnom-mashino?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=wapp"
         },
         links: {
-            article: "",
-            figma: "",
+            article: "https://itrussia-media.translate.goog/ru/article/tsifrovoy-dvoynik-ot-rosatoma-revolyutsiya-v-atomnom-mashino?_x_tr_sl=en&_x_tr_tl=ru&_x_tr_hl=ru&_x_tr_pto=wapp",
+            figma: "https://www.figma.com/design/NKkPefKklzfdwH4bI4TVNX/Platform?node-id=23060-36507&p=f&t=TtgqqkFDBn1VBHRk-0",
             docs: "",
         }
     },
@@ -98,20 +119,30 @@ export const projects: IProject[] = [
         description: "kit_desc",
         screenshots: [
             "kit_sshot.png",
+            "kit_1.png"
         ],
         technologies: [
             [
                 ["HTML", "CSS", "SCSS", "TS"],
                 ["React", "Virtualized", "MUI", "MobX"],
                 ["Webpack"],
-                ["i18n", "C3D Toolkit"]
+                ["i18n", "C3D Toolkit", "Jest"]
+            ],
+            [
+                ["Git", "Jenkins", "Docker"],
+                ["Linux", "Bash"],
+                ["Figma", "Jira"],
+                ["Scrum", "Lean"]
             ]
         ],
         responsibilities: [
-            "3D-Viewer",
+            "3D Viewer",
             "Gantt",
             "Calendar",
-            "Datagrid"
+            "Datagrid",
+            "PWA",
+            "Camera",
+            "Biometric authentication"
         ],
         architecture: "",
         link: {
@@ -120,7 +151,7 @@ export const projects: IProject[] = [
         },
         links: {
             article: "",
-            figma: "",
+            figma: "https://www.figma.com/design/wMSSQurkeAlLC5ap8w92j8/Components--Web-?node-id=6435-2&p=f&t=HeWQ9NpvaJ1Cu7e2-0",
             docs: "",
         }
     },
@@ -130,14 +161,32 @@ export const projects: IProject[] = [
         description: "bim_desc",
         screenshots: [
             "bim_sshot.png",
+            "bim_1.png",
+            "bim_2.png",
+            "bim_3.png",
+            "bim_4.png",
+            "bim_5.png"
         ],
         technologies: [
-            []
+            [
+                ["HTML", "CSS", "SCSS", "JS", "TS"],
+                ["React", "MUI", "MobX", "GraphQL"],
+                ["Webpack"],
+                ["i18n"]
+            ],
+            [
+                ["Git", "Jenkins", "Docker"],
+                ["Linux", "Bash"],
+                ["Figma", "Jira"],
+                ["Scrum", "Lean"]
+            ]
         ],
         responsibilities: [
+            "Projects",
             "Collisions",
             "Initial data",
             "Color and transparency",
+            "Directories"
         ],
         architecture: "",
         link: {
@@ -156,11 +205,32 @@ export const projects: IProject[] = [
         description: "bpmn_desc",
         screenshots: [
             "bpmn_sshot.png",
+            "bpmn_1.png",
+            "bpmn_2.png"
         ],
         technologies: [
-            []
+            [
+                ["HTML", "CSS", "SCSS", "JS", "TS"],
+                ["React", "MUI", "MobX", "GraphQL"],
+                ["Webpack"],
+                ["i18n", "bpmn.js"]
+            ],
+            [
+                ["Git", "Jenkins", "Docker"],
+                ["Linux", "Bash"],
+                ["Figma", "Jira"],
+                ["Scrum", "Lean"]
+            ]
         ],
-        responsibilities: [],
+        responsibilities: [
+            "Processes",
+            "Process Definition",
+            "Incidents",
+            "Called Definitions",
+            "Process Instance",
+            "Called Processes"
+
+        ],
         architecture: "",
         link: {
             name: "doc",

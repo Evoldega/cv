@@ -31,7 +31,7 @@ export default async function Experience({
                         date={t("Experience.rosatom_date")}
                         location={t("Common.moscow")}
                         description={getDescription(8, t, "Experience.ros_exp")}
-                        stack={`${t("Experience.technologies")}: React, TypeScript, MobX, GraphQL, NestJS (BFF), i18n, C3D Toolkit, Prisma, PostgreSQL, WebSocket, PWA, SAFe.`}
+                        stack={`${t("Experience.technologies")}: React, TypeScript, MobX, GraphQL, NestJS (BFF), Jest, i18n, C3D Toolkit, Prisma, PostgreSQL, WebSocket, PWA, SAFe`}
                     />
                     <Company
                         expanded
@@ -41,7 +41,7 @@ export default async function Experience({
                         date={t("Experience.chrono_date")}
                         location={t("Common.moscow")}
                         description={getDescription(7, t, "Experience.chrono_exp")}
-                        stack={`${t("Experience.technologies")}: Node.js, TypeScript, PostgreSQL, Telegram Bot API, React, Redux, Express.js.`}
+                        stack={`${t("Experience.technologies")}: Node.js, TypeScript, PostgreSQL, React, Redux, Jest, i18n`}
                     />
                 </div>
             }

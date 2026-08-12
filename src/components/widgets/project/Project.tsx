@@ -34,7 +34,7 @@ export async function Project(
                     <Text variant="p">{t(description)}</Text>  
                 </div>
                 {
-                    responsibilities.length && (
+                    !!responsibilities.length && (
                         <div className="flex flex-wrap gap-[16px]">
                             {
                                 responsibilities.map((tech, index) => (           
@@ -47,7 +47,7 @@ export async function Project(
                     )
                 }
                 {
-                    technologies.length && (
+                    !!technologies.length && (
                         <div className="flex flex-col gap-[16px]">
                             {
                                 technologies.map((direction, directionIndex) => (
