@@ -88,36 +88,60 @@
         "en": "Jun 2021 - Feb 2022"
     },
     "Experience.chrono_exp1": {
-        "ru": "Разрабатывал и поддерживал высоконагруженного Telegram-бота для внутренних пользователей: проектировал архитектуру, реализовал агрегацию и трансформацию данных из нескольких источников (базы данных, внешние API), обеспечил стабильную работу под высокой нагрузкой.",
-        "en": "Developed and maintained a high-load Telegram bot for internal users, designing its architecture and implementing data aggregation and transformation from multiple sources (databases and external APIs), ensuring reliable performance under heavy load."
+        "ru": "Разрабатывал личный кабинет мерчанта и внутренние инструменты для саппорта и финансов.",
+        "en": "Developed a merchant dashboard and internal back-office tools for support and finance teams."
     },
     "Experience.chrono_exp1_bold": {
-        "ru": "Разрабатывал и поддерживал высоконагруженного Telegram-бота",
-        "en": "Developed and maintained a high-load Telegram bot"
+        "ru": "Разрабатывал личный кабинет мерчанта",
+        "en": "Developed a merchant dashboard"
     },
     "Experience.chrono_exp2": {
-        "ru": "Отвечал за ключевой платежный функционал: разработал и внедрил безопасную форму ввода банковских карт с последующей переадресацией на 3DS-аутентификацию, что гарантировало полное соответствие отраслевым стандартам безопасности (PCI DSS).",
-        "en": "Owned the core payment functionality by designing and implementing a secure bank card input form with subsequent 3D Secure (3DS) authentication redirection, ensuring full compliance with PCI DSS security standards."
+        "ru": "Создал crud для профиля мерчанта с валидацией реквизитов и ИНН.",
+        "en": "Built CRUD functionality for merchant profiles with validation of business details and tax identification numbers."
     },
     "Experience.chrono_exp2_bold": {
-        "ru": "Отвечал за ключевой платежный функционал",
-        "en": "Owned the core payment functionality"
+        "ru": "Создал crud для профиля мерчанта",
+        "en": "Built CRUD functionality for merchant profiles"
     },
     "Experience.chrono_exp3": {
-        "ru": "Участвовал в полном цикле разработки и запуска реферальной программы: от проектирования бизнес-логики начисления бонусов и создания административного интерфейса до интеграции с платежной системой и анализа эффективности.",
-        "en": "Participated in the full lifecycle of the referral program development and launch, from designing the bonus accrual business logic and building an administrative interface to integrating with the payment system and analyzing program performance."
+        "ru": "Добавил управление API-ключами: генерацию, сброс и безопасное хранение в виде хеша.",
+        "en": "Implemented API key management, including generation, reset, and secure hash-based storage."
     },
     "Experience.chrono_exp3_bold": {
-        "ru": "Участвовал в полном цикле разработки и запуска реферальной программы",
-        "en": "Participated in the full lifecycle of the referral program development and launch"
+        "ru": "Добавил управление API-ключами",
+        "en": "Implemented API key management"
     },
     "Experience.chrono_exp4": {
-        "ru": "Оптимизировал процессы взаимодействия с базой данных, что сократило время отклика ключевых отчетных интерфейсов.",
-        "en": "Optimized database interaction processes, significantly reducing response times for key reporting interfaces."
+        "ru": "Разработал просмотр транзакций и управление справочниками: валютами, банковскими кодами ошибок и причинами возвратов.",
+        "en": "Developed transaction monitoring and reference data management for currencies, bank error codes, and refund reasons."
     },
     "Experience.chrono_exp4_bold": {
-        "ru": "Оптимизировал процессы взаимодействия с базой данных",
-        "en": "Optimized database interaction processes"
+        "ru": "Разработал просмотр транзакций",
+        "en": "Developed transaction monitoring"
+    },
+    "Experience.chrono_exp5": {
+        "ru": "Интегрировал MinIO для загрузки и хранения документов с привязкой файлов к сущностям в БД.",
+        "en": "Integrated MinIO for document upload and storage, with files linked to database entities."
+    },
+    "Experience.chrono_exp5_bold": {
+        "ru": "Интегрировал MinIO",
+        "en": "Integrated MinIO"
+    },
+    "Experience.chrono_exp6": {
+        "ru": "Добавил возможность ручного обновления статусов платежей.",
+        "en": "Added functionality for manual payment status updates."
+    },
+    "Experience.chrono_exp6_bold": {
+        "ru": "Добавил возможность ручного обновления",
+        "en": "Added functionality"
+    },
+    "Experience.chrono_exp7": {
+        "ru": "Покрыл бизнес-логику unit- и интеграционными тестами, добавил локализацию (i18n).",
+        "en": "Covered business logic with unit and integration tests and implemented localization (i18n)."
+    },
+    "Experience.chrono_exp7_bold": {
+        "ru": "Покрыл бизнес-логику",
+        "en": "Covered business logic"
     },
     "Experience.technologies": {
         "ru": "Технологии",

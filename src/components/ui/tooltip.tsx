@@ -54,7 +54,7 @@ function TooltipContent({
             `z-50
             inline-flex
             w-fit
-            max-w-xs
+            max-w-[200px]
             origin-(--transform-origin)
             items-center
             gap-1.5
