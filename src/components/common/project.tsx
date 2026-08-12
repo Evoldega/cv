@@ -12,7 +12,7 @@ interface IProject {
     };
 }
 
-export default async function Projects({
+export default async function ProjectCard({
     image,
     title,
     desc,

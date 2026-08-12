@@ -30,6 +30,10 @@ export const projects: IProject[] = [
         cover: "atomcode_sshot.png",
         title: "atomcode",
         description: "atomcode_desc",
+        screenshots: [
+            "atomcode_sshot.png",
+            "atomcode_1.png"
+        ],
         technologies: [
             [
                 ["HTML", "CSS", "SCSS", "JS", "TS"],

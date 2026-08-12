@@ -12,6 +12,7 @@ interface ITooltip {
     align?: "start" | "center" | "end";
     side?: "top" | "bottom" | "left" | "right";
     className?: string;
+    disabled?: boolean;
 }
 
 export function Tooltip({ 
@@ -19,17 +20,27 @@ export function Tooltip({
     children,
     align = "end",
     side = "top",
-    className = ""
+    className = "",
+    disabled = false,
 }: ITooltip) {
 
+  if (disabled) {
     return (
-        <TooltipPrimitive>
-            <TooltipTrigger className={className}>
-                { children }
-            </TooltipTrigger>
-            <TooltipContent align={align} side={side}>
-                {title}
-            </TooltipContent>
-        </TooltipPrimitive>
+      <>
+        {children}
+      </>
     );
+  }
+
+  return (
+    <TooltipPrimitive>
+      <TooltipTrigger className={className}>
+        {children}
+      </TooltipTrigger>
+
+      <TooltipContent align={align} side={side}>
+        {title}
+      </TooltipContent>
+    </TooltipPrimitive>
+  );
 }

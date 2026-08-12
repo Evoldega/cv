@@ -71,7 +71,7 @@ export default function Company({
                     </section>
                 }
                 content={
-                    <section className="grow mt-[24px]">
+                    <section className="grow mt-[24px] text-justify">
                         {
                             description.map((desc, index) => (
                                 <div key={index} className="flex flex-row items-start mb-[4px]">

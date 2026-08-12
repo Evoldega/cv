@@ -1,4 +1,4 @@
-import Project from "@/components/common/project";
+import ProjectCard from "@/components/common/project";
 import Link from "next/link";
 
 import { getTranslations } from 'next-intl/server';
@@ -25,7 +25,7 @@ export default async function Projects() {
                         duration-500
                     "
                 >
-                    <Project
+                    <ProjectCard
                         image={project.cover}
                         title={t(project.title)}
                         desc={t(project.description)}
