@@ -40,7 +40,7 @@ export default async function Experience({
                         company={t("Experience.chrono")}
                         date={t("Experience.chrono_date")}
                         location={t("Common.moscow")}
-                        description={getDescription(4, t, "Experience.chrono_exp")}
+                        description={getDescription(7, t, "Experience.chrono_exp")}
                         stack={`${t("Experience.technologies")}: Node.js, TypeScript, PostgreSQL, Telegram Bot API, React, Redux, Express.js.`}
                     />
                 </div>

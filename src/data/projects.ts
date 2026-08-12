@@ -80,9 +80,7 @@ export const projects: IProject[] = [
         technologies: [
             []
         ],
-        responsibilities: [
-            ""
-        ],
+        responsibilities: [],
         architecture: "",
         link: {
             name: "article",
@@ -162,9 +160,7 @@ export const projects: IProject[] = [
         technologies: [
             []
         ],
-        responsibilities: [
-            ""
-        ],
+        responsibilities: [],
         architecture: "",
         link: {
             name: "doc",
